@@ -8,6 +8,12 @@
 require("scripts/globals/status");
 
 -----------------------------------
+-- Constant Initializations
+-----------------------------------
+
+local Fluturini = 17907714;
+
+-----------------------------------
 -- onMobEngaged
 -----------------------------------
 
@@ -19,7 +25,15 @@ end;
 -----------------------------------
 
 function onMobSpawn(mob)
-    mob:setLocalVar("FluturiniDespawnTime", os.time(t) + 3600);
+    mob:setUnkillable(true);
+--	mob:setLocalVar("FluturiniDespawnTime", os.time + 10);  -- 3600 1 hour
+    SetDropRate(7001,18971,333); --war
+	SetDropRate(7001,18982,333); --sam
+	SetDropRate(7001,18969,333); --dnc
+	SetDropRate(7001,18975,333); --rdm
+	SetDropRate(7001,18973,333); --whm
+	SetDropRate(7001,18970,333); --sch
+	SetDropRate(7001,18979,333); --bst
 end;
 
 -----------------------------------
@@ -27,7 +41,6 @@ end;
 -----------------------------------
 
 function onMobFight(mob,target)
-    local depopTime = mob:getLocalVar("FluturiniDespawnTime");
     local hpp = mob:getHPP();
 	local useBlowup = false;
 	local battletarget = mob:getTarget();
@@ -35,6 +48,11 @@ function onMobFight(mob,target)
 	t.rot = battletarget:getRotPos();
 	local angle = math.random() * math.pi
 	local pos = NearLocation(t, 1.5, angle);
+--	local depopTime = mob:getLocalVar("FluturiniDespawnTime");
+	
+--	if (os.time(t) > depopTime) then
+--	DespawnMob(Fluturini); 
+--	end
 	
 	if (GetMobAction(17907715) == 0) then
         mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/200));	-- if main mob is dead regen 1% / 2 ticks
@@ -43,6 +61,10 @@ function onMobFight(mob,target)
 			mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/200));
 		end
 	end
+	
+    if (GetMobAction(17907715) == 0) then           
+        mob:setUnkillable(false);
+    end
 
 	if (hpp < 75 and mob:getLocalVar("flutterboom") == 0) then
 	    mob:resetEnmity(target);
@@ -75,11 +97,6 @@ function onMobFight(mob,target)
 	if (useBlowup == true) then
         mob:useMobAbility(731); -- Mijin Gakure
 	end
-	
-	    -- Check for time limit, too
-    if (os.time(t) > depopTime) then
-	    DespawnMob(17907714);
-	end
 end;	
 	
 	
@@ -88,7 +105,6 @@ end;
 -----------------------------------
 
 function onMobEngaged(mob,target)
-    mob:setMod(MOD_REGAIN, 25);
 end;
 
 -----------------------------------
@@ -96,7 +112,7 @@ end;
 -----------------------------------
 
 function onMobDisengage(mob)
-    mob:setMod(MOD_REGAIN,0);
+    mob:setUnkillable(true);
 end;
 
 -----------------------------------
@@ -104,10 +120,6 @@ end;
 -----------------------------------
 
 function onMobDeath(mob, player, isKiller)
-	 if (GetMobAction(17907715) == 0) then 
-        SetDropRate(1936,18971,100);
-        SetDropRate(1936,18982,25);
-	end
 end;
 
 -----------------------------------
