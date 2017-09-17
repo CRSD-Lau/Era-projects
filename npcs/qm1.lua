@@ -2,6 +2,7 @@
 -- Area: Rakaznar_Inner_Court
 --  NPC: ??? (Spawn Pox Hound and Draftdance Fluturini)
 -- !pos 179 -440 -140 276
+-- ID 17908257
 -----------------------------------
 package.loaded["scripts/zones/RaKaznar_Inner_Court/TextIDs"] = nil;
 -----------------------------------
@@ -21,10 +22,10 @@ end;
 
 function onTrigger(player,npc)
 
-    if(player:hasKeyItem(LILAC_COLORED_SEAL) and GetMobAction(17907715) == 0) then
+    if(player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907715) == 0) then
 		
         SpawnMob(17907715):updateClaim(player); -- Pox Hound
-		player:delKeyItem(LILAC_COLORED_SEAL) 
+		player:delKeyItem(DAWN_PHANTOM_GEM) 
 	end
 end;
 
