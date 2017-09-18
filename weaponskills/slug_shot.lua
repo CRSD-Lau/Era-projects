@@ -24,13 +24,13 @@ function onUseWeaponSkill(player, target, wsID, tp, primary, action, taChar)
 	if (mythic == 18987)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicCor") <= 499 then
 			player:setVar("MythicCor", (player:getVar("MythicCor")+1));
-			player:PrintToPlayer(string.format("Ninja Mythic Point! %d/500 points", corpoints ));
+			player:PrintToPlayer(string.format("Corsair Mythic Point! %d/500 points", corpoints ));
 		else player:PrintToPlayer("Congrats, Mythic WeaponSkill Leaden Salute is complete!");
 		end
 	elseif (mythic == 18981)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicRng") <= 499 then
 			player:setVar("MythicRng", (player:getVar("MythicRng")+1));
-			player:PrintToPlayer(string.format("Ninja Mythic Point! %d/500 points", rngpoints ));
+			player:PrintToPlayer(string.format("Ranger Mythic Point! %d/500 points", rngpoints ));
 		else player:PrintToPlayer("Congrats, Mythic WeaponSkill Trueflight is complete!");
 		end
 	end
