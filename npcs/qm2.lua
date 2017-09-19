@@ -1,7 +1,7 @@
 -----------------------------------
 -- Area: Rakaznar_Inner_Court
 --  NPC: ??? (Spawn Whitenoise Bats)
--- !pos 811 89 60 276
+-- !pos 819 89 60 276
 -- ID 17908258
 -----------------------------------
 package.loaded["scripts/zones/RaKaznar_Inner_Court/TextIDs"] = nil;
@@ -22,10 +22,14 @@ end;
 
 function onTrigger(player,npc)
 
-    if(player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907757) == 0) then
-		
+    if (player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907757) == 0) then
+	    player:PrintToPlayer("Prepare yourself!");
         SpawnMob(17907757):updateClaim(player); -- Whitenoise Bats
-		player:delKeyItem(DAWN_PHANTOM_GEM) 
+		player:delKeyItem(DAWN_PHANTOM_GEM);
+    elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907757) == 1) then
+		player:PrintToPlayer("Mobs are up already");
+	elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) == false) then
+	    player:PrintToPlayer("You are missing the pop Key Item");
 	end
 end;
 

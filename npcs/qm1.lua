@@ -29,7 +29,7 @@ function onTrigger(player,npc)
     elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907715) == 1) then
 		player:PrintToPlayer("Mobs are up already");
 	elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) == false) then
-	    player:PrintToPlayer("You are missing the pop Kiey Item");
+	    player:PrintToPlayer("You are missing the pop Key Item");
 	end
 end;
 

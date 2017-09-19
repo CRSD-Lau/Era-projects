@@ -22,12 +22,15 @@ end;
 
 function onTrigger(player,npc)
 
-    if(player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907733) == 0) then
-		
-        SpawnMob(17907733):updateClaim(player); -- Whitenoise Bats
-		player:delKeyItem(DAWN_PHANTOM_GEM) 
+    if (player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907733) == 0) then
+	    player:PrintToPlayer("Prepare yourself!");
+        SpawnMob(17907733):updateClaim(player); -- Wayward Bhoot
+		player:delKeyItem(DAWN_PHANTOM_GEM);
+    elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) and GetMobAction(17907733) == 1) then
+		player:PrintToPlayer("Mobs are up already");
+	elseif (player:hasKeyItem(DAWN_PHANTOM_GEM) == false) then
+	    player:PrintToPlayer("You are missing the pop Key Item");
 	end
-
 end;
 
 -----------------------------------
