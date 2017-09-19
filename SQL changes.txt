@@ -18,3 +18,23 @@ INSERT INTO `mob_droplist` (`dropId`, `itemId`, `itemRate`) VALUES ('7001', '189
 INSERT INTO `mob_droplist` (`dropId`, `itemId`, `itemRate`) VALUES ('7001', '18986', '10');
 INSERT INTO `mob_droplist` (`dropId`, `itemId`, `itemRate`) VALUES ('7001', '18987', '10');
 INSERT INTO `mob_droplist` (`dropId`, `itemId`, `itemRate`) VALUES ('7001', '18988', '10');
+
+DELETE FROM `npc_list` WHERE  `npcid`=17908257;
+DELETE FROM `npc_list` WHERE  `npcid`=17908258;
+DELETE FROM `npc_list` WHERE  `npcid`=17908259;
+DELETE FROM `npc_list` WHERE  `npcid`=17908260;
+
+INSERT INTO `npc_list` VALUES ('17908257', 'qm1', '???', '0', '-179', '-440', '-140', '1', '50', '50', '0', '0', '1', '0', '3', 0x0000340000000000000000000000000000000000, '0', 'SOA', '1');
+INSERT INTO `npc_list` VALUES ('17908258', 'qm2', '???', '0', '819', '89', '60', '1', '50', '50', '0', '0', '0', '1', '3', 0x0000340000000000000000000000000000000000, '0', 'SOA', '1');
+INSERT INTO `npc_list` VALUES ('17908259', 'qm3', '???', '0', '-199', '-449', '-200', '1', '50', '50', '0', '0', '1', '0', '3', 0x0000340000000000000000000000000000000000, '0', 'SOA', '1');
+
+UPDATE `mob_spawn_points` SET `pos_x`='811', `pos_y`='90', `pos_z`='68' WHERE  `mobid`=17907757;
+UPDATE `mob_spawn_points` SET `pos_x`='-199', `pos_y`='-450', `pos_z`='-214' WHERE  `mobid`=17907733;
+UPDATE `mob_spawn_points` SET `pos_x`='-185', `pos_y`='-450', `pos_z`='-199' WHERE  `mobid`=17907735;
+UPDATE `mob_spawn_points` SET `pos_x`='-168', `pos_y`='-440', `pos_z`='-140' WHERE  `mobid`=17907714;
+UPDATE `mob_spawn_points` SET `pos_x`='-179', `pos_y`='-440', `pos_z`='-152' WHERE  `mobid`=17907715;
+
+UPDATE `mob_pools` SET `immunity`='71', `spellList`='0' WHERE  `poolid`=5443;
+UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14205;
+UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14196;
+UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14190;

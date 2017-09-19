@@ -1,8 +1,0 @@
-givekeyitem 1918	
-
-
--199 -449 -200  -- ghost add chainspell
-
-179 -440 -140 -- hound  add poison to butterfly
-
-811 89 60 -- thf change shields to ws mode lower regain

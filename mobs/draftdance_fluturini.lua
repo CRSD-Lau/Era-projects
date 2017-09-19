@@ -1,7 +1,7 @@
 -----------------------------------
 -- Area: Rakaznar_Inner_Court
 -- MOB: Draftdance Fluturini
--- POS: !pos -345 -501 92 276
+-- POS: !pos -168 -440 -140 276
 -- MOB ID: !spawnmob 17907714
 -----------------------------------
 
@@ -27,13 +27,13 @@ end;
 function onMobSpawn(mob)
     mob:setUnkillable(true);
 --	mob:setLocalVar("FluturiniDespawnTime", os.time + 10);  -- 3600 1 hour
-    SetDropRate(7001,18971,333); --war
-	SetDropRate(7001,18982,333); --sam
-	SetDropRate(7001,18969,333); --dnc
-	SetDropRate(7001,18975,333); --rdm
-	SetDropRate(7001,18973,333); --whm
-	SetDropRate(7001,18970,333); --sch
-	SetDropRate(7001,18979,333); --bst
+    SetDropRate(7001,18971,250); --war
+	SetDropRate(7001,18982,250); --sam
+	SetDropRate(7001,18969,250); --dnc
+	SetDropRate(7001,18975,250); --rdm
+	SetDropRate(7001,18973,250); --whm
+	SetDropRate(7001,18970,250); --sch
+	SetDropRate(7001,18979,250); --bst
 end;
 
 -----------------------------------
@@ -57,9 +57,18 @@ function onMobFight(mob,target)
 	if (GetMobAction(17907715) == 0) then
         mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/200));	-- if main mob is dead regen 1% / 2 ticks
 	else mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/-100)); -- if main mob is alive -1% hp / tick until it reaches set hp
-		if (hpp < 47) then
-			mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/200));
-		end
+	--	if (hpp < 47) then
+	--		mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/50));
+	--	end
+	end
+	
+	if (hpp < 26) and ((GetMobAction(17907715) == 0) == false) then
+		mob:addHP(mob:getMaxHP() * .75);
+		mob:setLocalVar("flutterboom", 0);
+	end
+	if (hpp < 50) then
+	    mob:addMod(MOD_SLEEPRES,100);
+		mob:addMod(MOD_LULLABYRES,100);
 	end
 	
     if (GetMobAction(17907715) == 0) then           
