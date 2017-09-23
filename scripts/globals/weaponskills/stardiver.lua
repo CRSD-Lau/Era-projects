@@ -28,7 +28,7 @@ function onUseWeaponSkill(player, target, wsID, tp, primary, action, taChar)
 	if (mythic == 18984)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicDrg") <= 499 then
 			player:setVar("MythicDrg", (player:getVar("MythicDrg")+1));
-			player:PrintToPlayer(string.format("Dragood Mythic Point! %d/500 points", drgpoints ));
+			player:PrintToPlayer(string.format("Dragoon Mythic Point! %d/500 points", drgpoints ));
 		else player:PrintToPlayer("Congrats, Mythic WeaponSkill Drakesbane is complete!");
 		end
 	end

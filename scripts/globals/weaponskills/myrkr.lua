@@ -11,9 +11,9 @@ function onUseWeaponSkill(player, target, wsID, tp, primary, action, taChar)
 	local wspack = player:getVar("wspack")
 	local wsmyrkr = player:getVar("wsmyrkr")
 	local mythic = player:getEquipID(SLOT_MAIN)
-local blupoints = player:getVar("MythicBlm")+1
-local pldpoints = player:getVar("MythicSmn")+1
-local rdmpoints = player:getVar("MythicSch")+1
+local blmpoints = player:getVar("MythicBlm")+1
+local smnpoints = player:getVar("MythicSmn")+1
+local schpoints = player:getVar("MythicSch")+1
 	
 	if (mythic == 18974)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicBlm") <= 499 then
