@@ -34,7 +34,7 @@ UPDATE `mob_spawn_points` SET `pos_x`='-185', `pos_y`='-450', `pos_z`='-199' WHE
 UPDATE `mob_spawn_points` SET `pos_x`='-168', `pos_y`='-440', `pos_z`='-140' WHERE  `mobid`=17907714;
 UPDATE `mob_spawn_points` SET `pos_x`='-179', `pos_y`='-440', `pos_z`='-152' WHERE  `mobid`=17907715;
 
-UPDATE `mob_pools` SET `immunity`='71', `spellList`='0' WHERE  `poolid`=5443;
+UPDATE `mob_pools` SET `immunity`='655', `spellList`='0' WHERE  `poolid`=5443;
 UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14205;
 UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14196;
 UPDATE `mob_groups` SET `dropid`='7001' WHERE  `groupid`=14190;
