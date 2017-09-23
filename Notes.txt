@@ -1,0 +1,47 @@
+WAR+	Conqueror	18971		great axe	
+MNK	Glanzfaust	18972		h2h
+WHM+	Yagrush		18973		club		
+BLM	Laevateinn	18974		staff
+RDM+	Murgleis	18975		sword			
+THF+	Vajra		18976		dagger
+PLD	Burtgang	18977		sword
+DRK	Liberator	18978		scythe
+BST+	Aymur		18979		axe		
+BRD	Carnwenhan	18980		dagger
+RNG+	Gastraphetes	18981	ranged	marksmanship
+SAM+	Kogarasumaru	18982		GK		
+NIN+	Nagi		18983		katanna
+DRG	Ryunohige	18984		polearm
+SMN	Nirvana		18985		staff
+BLU	Tizona		18986		sword
+COR+	Death Penalty	18987	Ranged	gun
+PUP+	Kenkonken	18988		h2h
+DNC+	Terpsichore	18969		dagger		
+SCH+	Tupsimati	18970		staff		
+
+dagger	done	THF,BRD,DNC
+		exenterator, evisceration
+Greataxedone	WAR
+		Upheaval, Raging Rush
+Club	done	WHM
+		Realmrazer, Hexa Strike
+Staff	done	BLM,SMN,SCH
+		Myrkr, Spirit Taker
+Sword	done	RDM,PLD,BLU
+		Requiescat, Vorpal Blade
+Scythe	done	RDK
+		Entropy, Guillotine
+Axe	done	BST 18979
+		Cloudsplitter, Rampage
+Archery		RNG 18981
+		Sidewinder, jishnus Radiance
+Great Katana	SAM 18982
+		Tachi:Shona, Tachi:Kasha
+Katana	dode	NIN 18983
+		Blade:Shun, Blade:Jin
+Polearm	done	DRG 18984
+		Stardiver, Penta Thrust
+Gun		COr 18987
+		Slug Shot, Last Stand
+H2h	done	MNK,PUP
+		Victory Smite, Asuran Fists
