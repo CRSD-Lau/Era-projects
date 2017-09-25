@@ -17,11 +17,11 @@ require("scripts/globals/settings");
 require("scripts/globals/weaponskills");
 -----------------------------------
 
-function onUseWeaponSkill(player, target, wsID, tp, primary, action, taChar
-local mythic = player:getEquipID(SLOT_MAIN)
-local thfpoints = player:getVar("MythicThf")+1
-local brdpoints = player:getVar("MythicBrd")+1
-local dncpoints = player:getVar("MythicDnc")+1
+function onUseWeaponSkill(player, target, wsID, tp, primary, action, taChar)
+    local mythic = player:getEquipID(SLOT_MAIN)
+    local thfpoints = player:getVar("MythicThf")+1
+    local brdpoints = player:getVar("MythicBrd")+1
+    local dncpoints = player:getVar("MythicDnc")+1
 	
 	if (mythic == 18976)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicThf") <= 499 then
@@ -61,5 +61,4 @@ end
     local damage, criticalHit, tpHits, extraHits = doPhysicalWeaponskill(player, target, wsID, tp, primary, action, taChar, params);
     scoreCheck(player, wsID, damage, target); return tpHits, extraHits, criticalHit, damage;
 
-end
 end;
