@@ -58,11 +58,10 @@ function onMobFight(mob,target)
 		mob:setLocalVar("flutterboom", 0);
 	end
 	if (hpp < 50) then
-	    mob:addMod(MOD_SLEEPRES,100);
-		mob:addMod(MOD_LULLABYRES,100);
-		mob:addMod(MOD_TRIPLE_ATTACK,30);
-		mob:addMod(MOD_ACC,30);
-		mob:addMod(MOD_MDEF,100);
+	    mob:addMod(MOD_SLEEPRES, 100);
+		mob:addMod(MOD_LULLABYRES, 100);
+		mob:addMod(MOD_DOUBLE_ATTACK, 25);
+		mob:addMod(MOD_MDEF, 100);
 		if (mob:hasStatusEffect(EFFECT_BIND) == true) then
 		    mob:delStatusEffect(EFFECT_BIND);
 			mob:resetEnmity(target);
@@ -133,7 +132,6 @@ end;
 function onMobEngaged(mob,target)
     mob:setMobMod(MOBMOD_RAGE, 3600); -- 1 hour 3600
     mob:setMobMod(MOBMOD_ADD_EFFECT,1);
-	mob:addMod(MOD_ACC, 50);
 	mob:addMod(MOD_GRAVITYRES, 100);
 end;
 
@@ -142,7 +140,7 @@ end;
 -----------------------------------
 
 function onAdditionalEffect(mob,player)
-local chance = 40;
+local chance = 20;
 local effect = math.random(1,5)
 -- apply a random status effect from thf bolts (resets enmity so it can apply it to the next player if the player already has the status effect)
 	if (effect == 1) then

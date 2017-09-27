@@ -40,8 +40,9 @@ end;
 -----------------------------------
 
 function onMobFight(mob,target)
-        local hpp = mob:getHPP();
-    	local battletarget = mob:getTarget();
+    local hpp = mob:getHPP();
+	local shield = math.random(1,5)
+    local battletarget = mob:getTarget();
 	local t = battletarget:getPos();
 	local angle = math.random() * math.pi
 	local pos = NearLocation(t, 1.5, angle);
@@ -73,6 +74,35 @@ function onMobFight(mob,target)
 	elseif (hpp == 100) then
 	    mob:setLocalVar("Breath", 0);
 	end
+
+	local changeTime = mob:getLocalVar("changeTime")
+	
+
+	if (mob:getBattleTime()- changeTime > 60) and (mob:getLocalVar(shield)) then
+		mob:resetEnmity(target);
+		mob:setLocalVar("changeTime", mob:getBattleTime());
+		    if (shield == 1) then
+		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
+    elseif (shield == 2) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+    elseif (shield == 3) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
+        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
+	elseif (shield == 4) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
+		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+	elseif (shield == 5) then
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
+		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+	end
+	end
 end;
 
 
@@ -82,49 +112,7 @@ end;
 ----------------------------------------------
 
 function onMobWeaponSkill(target, mob, skill)
-	local shield = math.random(1,5)
-	local battletarget = mob:getTarget();
-	local t = battletarget:getPos();
-	local angle = math.random() * math.pi
-	local pos = NearLocation(t, 1.5, angle);
-	t.rot = battletarget:getRotPos();
-	
-    if (shield == 1) then
-		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
-		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
-        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
---      mob:resetEnmity(target);
---		mob:teleport(pos, battletarget);
---		skill:setMsg(0);
-    elseif (shield == 2) then
-		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
-		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
-        mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
---		mob:resetEnmity(target);
---		mob:teleport(pos, battletarget);
---		skill:setMsg(0);
-    elseif (shield == 3) then
-		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
-		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
-        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
---		mob:resetEnmity(target);
---		mob:teleport(pos, battletarget);
---		skill:setMsg(0);
-	elseif (shield == 4) then
-		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
-        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
-		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
---		mob:resetEnmity(target);
---		mob:teleport(pos, battletarget);
---		skill:setMsg(0);
-	elseif (shield == 5) then
-		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
-        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
-		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
---		mob:resetEnmity(target);
---		mob:teleport(pos, battletarget);
---		skill:setMsg(0);
-	end
+
 end;
 
 
