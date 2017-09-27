@@ -109,7 +109,7 @@ function onMobEngaged(mob,target)
 
 	GetMobByID(17907735):updateEnmity(target);
 	mob:setMobMod(MOBMOD_RAGE, 3600); -- 1 hour 3600
-	mob:addMod(MOBMOD_NO_STANDBACK,1); 
+	mob:addMod(MOBMOD_NO_STANDBACK, -1); 
     mob:addMod(MOD_AQUAVEIL_COUNT,20);
 	mob:addMod(MOD_BINDRES,20);
 	mob:addMod(MOD_SLEEPRES,-100);
