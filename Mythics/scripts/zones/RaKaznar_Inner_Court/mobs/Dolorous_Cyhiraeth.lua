@@ -24,25 +24,12 @@ end;
 function onMobSpawn(mob)
     mob:setUnkillable(true);
     SetDropRate(7001,18972,200); --mnk
-	SetDropRate(7001,18974,200); --blm
-	SetDropRate(7001,18977,200); --pld
-	SetDropRate(7001,18978,200); --drk
-	SetDropRate(7001,18980,200); --brd
-	SetDropRate(7001,18984,200); --drg
-	SetDropRate(7001,18986,200); --blu
-	SetDropRate(7001,18971,30); --war
-	SetDropRate(7001,18982,30); --sam
-	SetDropRate(7001,18969,30); --dnc
-	SetDropRate(7001,18975,30); --rdm
-	SetDropRate(7001,18973,30); --whm
-	SetDropRate(7001,18970,30); --sch
-	SetDropRate(7001,18979,30); --bst
-	SetDropRate(7001,18976,30); --tfh
-	SetDropRate(7001,18983,30); --nin
-	SetDropRate(7001,18981,30); --rng
-	SetDropRate(7001,18988,30); --pup
-	SetDropRate(7001,18987,30); --cor
-	SetDropRate(7001,18985,30); --smn
+	SetDropRate(7001,18974,50); --blm
+	SetDropRate(7001,18977,50); --pld
+	SetDropRate(7001,18978,50); --drk
+	SetDropRate(7001,18980,50); --brd
+	SetDropRate(7001,18984,50); --drg
+	SetDropRate(7001,18986,50); --blu
 end;
 
 -----------------------------------
