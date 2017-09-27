@@ -27,12 +27,12 @@ end
 -----------------------------------
 
 function onMobSpawn(mob)
-    SetDropRate(7001,18976,250); --tfh
-	SetDropRate(7001,18983,250); --nin
-	SetDropRate(7001,18981,250); --rng
-	SetDropRate(7001,18988,250); --pup
-	SetDropRate(7001,18987,250); --cor
-	SetDropRate(7001,18985,250); --smn
+    SetDropRate(7001,18976,200); --tfh
+	SetDropRate(7001,18983,200); --nin
+	SetDropRate(7001,18981,200); --rng
+	SetDropRate(7001,18988,200); --pup
+	SetDropRate(7001,18987,200); --cor
+	SetDropRate(7001,18985,200); --smn
 	SetDropRate(7001,18971,30); --war
 	SetDropRate(7001,18982,30); --sam
 	SetDropRate(7001,18969,30); --dnc
