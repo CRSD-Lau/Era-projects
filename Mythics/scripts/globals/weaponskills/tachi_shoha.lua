@@ -27,7 +27,7 @@ local wstachishoha = player:getVar("wstachishoha")
 	if (mythic == 18982)  and (player:getMainLvl() < target:getMainLvl()) and player:getMainLvl() == 75 then
 	    if player:getVar("MythicSam") <= 499 then
 			player:setVar("MythicSam", (player:getVar("MythicSam")+1));
-			player:PrintToPlayer(string.format("Ninja Mythic Point! %d/500 points", sampoints ));
+			player:PrintToPlayer(string.format("Samuri Mythic Point! %d/500 points", sampoints ));
 		else player:PrintToPlayer("Congrats, Mythic WeaponSkill Tachi: Rana is complete!");
 		end
 	end
