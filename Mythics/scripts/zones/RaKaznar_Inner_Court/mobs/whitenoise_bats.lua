@@ -40,21 +40,34 @@ end;
 -----------------------------------
 
 function onMobFight(mob,target)
-    local hpp = mob:getHPP();
+        local hpp = mob:getHPP();
+    	local battletarget = mob:getTarget();
+	local t = battletarget:getPos();
+	local angle = math.random() * math.pi
+	local pos = NearLocation(t, 1.5, angle);
+	t.rot = battletarget:getRotPos();
 	
 	if (hpp < 80 and mob:getLocalVar("Breath") == 0) then
        	mob:setLocalVar("Breath", 1);
+		mob:resetEnmity(target);
+		mob:teleport(pos, battletarget);
 		mob:useMobAbility(349); -- Bad Breath
 	elseif (hpp < 55 and mob:getLocalVar("Breath") == 1) then
        	mob:setLocalVar("Breath", 2);
+		mob:resetEnmity(target);
+		mob:teleport(pos, battletarget);
 		mob:useMobAbility(800); -- heat breath
         mob:resetEnmity(target);
 	elseif (hpp < 30 and mob:getLocalVar("Breath") == 2) then
        	mob:setLocalVar("Breath", 3);
+		mob:resetEnmity(target);
+		mob:teleport(pos, battletarget);
 		mob:useMobAbility(557); -- Level 5 Petrify
         mob:resetEnmity(target);
 	elseif (hpp < 10 and mob:getLocalVar("Breath") == 3) then
        	mob:setLocalVar("Breath", 4);
+		mob:resetEnmity(target);
+		mob:teleport(pos, battletarget);
 		mob:useMobAbility(2028); -- Fulmination
         mob:resetEnmity(target);
 	elseif (hpp == 100) then
