@@ -1,0 +1,4 @@
+lower jueno 42 -5 88 245
+port jueno 197 -5 0 246
+upper jueno 50 -5 -82 244
+rulude zone 243 port to lower exit

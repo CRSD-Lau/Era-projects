@@ -1,9 +1,11 @@
------------------------------------
--- Area: Rakaznar_Inner_Court
--- MOB: Draftdance Fluturini
--- POS: !pos -168 -440 -140 276
--- MOB ID: !spawnmob 17907714
------------------------------------
+---------------------------------------------------
+-- Area: Inner Ra'kaznar Court
+-- Mob: Whitenoise Bats
+-- custom THF NM
+-- Pos: !pos 811 90 68 276
+-- groupid 5443, groupid, 14205, famid 394
+-- MobID: !spawnmob 17907757
+---------------------------------------------------
 
 require("scripts/globals/settings"); 
 require("scripts/globals/status"); -- needed so we can access effects and mods by name instead of number
@@ -15,21 +17,36 @@ require("scripts/globals/magic"); -- needed so we can access the resist function
 -----------------------------------
 
 function onMobEngaged(mob,target)
-end;
+    mob:setMobMod(MOBMOD_RAGE, 3600); -- 1 hour 3600
+	mob:setMobMod(MOBMOD_ADD_EFFECT,1); -- can't do add effects without this
+	mob:setMobMod(MOBMOD_HP_STANDBACK,-1); -- no standback
+end
 
 -----------------------------------
 -- onMobSpawn Action
 -----------------------------------
 
 function onMobSpawn(mob)
-    mob:setUnkillable(true);
-    SetDropRate(7001,18971,250); --war
-	SetDropRate(7001,18982,250); --sam
-	SetDropRate(7001,18969,250); --dnc
-	SetDropRate(7001,18975,250); --rdm
-	SetDropRate(7001,18973,250); --whm
-	SetDropRate(7001,18970,250); --sch
-	SetDropRate(7001,18979,250); --bst
+    SetDropRate(7001,18976,250); --tfh
+	SetDropRate(7001,18983,250); --nin
+	SetDropRate(7001,18981,250); --rng
+	SetDropRate(7001,18988,250); --pup
+	SetDropRate(7001,18987,250); --cor
+	SetDropRate(7001,18985,250); --smn
+	SetDropRate(7001,18971,30); --war
+	SetDropRate(7001,18982,30); --sam
+	SetDropRate(7001,18969,30); --dnc
+	SetDropRate(7001,18975,30); --rdm
+	SetDropRate(7001,18973,30); --whm
+	SetDropRate(7001,18970,30); --sch
+	SetDropRate(7001,18979,30); --bst
+	SetDropRate(7001,18972,30); --mnk
+	SetDropRate(7001,18974,30); --blm
+	SetDropRate(7001,18977,30); --pld
+	SetDropRate(7001,18978,30); --drk
+	SetDropRate(7001,18980,30); --brd
+	SetDropRate(7001,18984,30); --drg
+	SetDropRate(7001,18986,30); --blu
 end;
 
 -----------------------------------
@@ -38,105 +55,86 @@ end;
 
 function onMobFight(mob,target)
     local hpp = mob:getHPP();
-	local useBlowup = false;
-	local battletarget = mob:getTarget();
-	local t = battletarget:getPos();
-	t.rot = battletarget:getRotPos();
-	local angle = math.random() * math.pi
-	local pos = NearLocation(t, 1.5, angle);
 	
-	if (GetMobAction(17907715) == 0) then
-        mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/200));	-- if main mob is dead regen 1% / 2 ticks
-	else mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/-100)); -- if main mob is alive -1% hp / tick until it reaches set hp
-		if (hpp < 47) then
-			mob:setMod(MOD_REGEN, math.floor(mob:getMaxHP()/50));
-		end
-	end
-	
-	if (hpp < 26) and ((GetMobAction(17907715) == 0) == false) then
-		mob:addHP(mob:getMaxHP() * .75);
-		mob:setLocalVar("flutterboom", 0);
-	end
-	if (hpp < 50) then
-	    mob:setMod(MOD_SLEEPRES,100);
-		mob:setMod(MOD_LULLABYRES,100);
-		mob:setMod(MOD_TRIPLE_ATTACK,30);
-		mob:setMod(MOD_ACC,50);
-		mob:setMod(MOD_MDEF,100);
-		if (mob:hasStatusEffect(EFFECT_BIND) == true) then
-		    mob:delStatusEffect(EFFECT_BIND);
-			mob:resetEnmity(target);
-		end
-	end
-	
-	if (hpp < 25) then
-    	mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
-	else mob:delStatusEffect(EFFECT_ARROW_SHIELD);
-	end
-	
-    if (GetMobAction(17907715) == 0) then           
-        mob:setUnkillable(false);
-    end
-
-	if (hpp < 75 and mob:getLocalVar("flutterboom") == 0) then
-	    mob:resetEnmity(target);
-		mob:delStatusEffect(EFFECT_SLEEP_I);
-		mob:delStatusEffect(EFFECT_SLEEP_II);
-		mob:delStatusEffect(EFFECT_LULLABY);
-       	mob:setLocalVar("flutterboom", 1);
-		mob:teleport(pos, battletarget);
-		useBlowup = true;
-	elseif (hpp < 50 and mob:getLocalVar("flutterboom") == 1) then
-	    mob:resetEnmity(target);
-		mob:delStatusEffect(EFFECT_SLEEP_I);
-		mob:delStatusEffect(EFFECT_SLEEP_II);
-		mob:delStatusEffect(EFFECT_LULLABY);
-		mob:setLocalVar("flutterboom", 2);
-		mob:teleport(pos, battletarget);
-		useBlowup = true;
-	elseif (hpp < 25  and mob:getLocalVar("flutterboom") == 2) then
-	    mob:resetEnmity(target);
-		mob:setLocalVar("flutterboom", 3);
-		mob:teleport(pos, battletarget);
-		useBlowup = true;
-	elseif (hpp < 5  and mob:getLocalVar("flutterboom") == 3) then
-	    mob:setLocalVar("flutterboom", 4);
-	    mob:resetEnmity(target);
-		mob:teleport(pos, battletarget);
-		useBlowup = true;
+	if (hpp < 80 and mob:getLocalVar("Breath") == 0) then
+       	mob:setLocalVar("Breath", 1);
+		mob:useMobAbility(349); -- Bad Breath
+	elseif (hpp < 55 and mob:getLocalVar("Breath") == 1) then
+       	mob:setLocalVar("Breath", 2);
+		mob:useMobAbility(800); -- heat breath
+        mob:resetEnmity(target);
+	elseif (hpp < 30 and mob:getLocalVar("Breath") == 2) then
+       	mob:setLocalVar("Breath", 3);
+		mob:useMobAbility(557); -- Level 5 Petrify
+        mob:resetEnmity(target);
+	elseif (hpp < 10 and mob:getLocalVar("Breath") == 3) then
+       	mob:setLocalVar("Breath", 4);
+		mob:useMobAbility(2028); -- Fulmination
+        mob:resetEnmity(target);
 	elseif (hpp == 100) then
-	    mob:setLocalVar("flutterboom", 0);
+	    mob:setLocalVar("Breath", 0);
 	end
-	
-	if (useBlowup == true) then
-        mob:useMobAbility(731); -- Mijin Gakure
-	end
-end;	
+end;
+
+
 
 ----------------------------------------------
 -- onMobWeaponSkill 
 ----------------------------------------------
 
 function onMobWeaponSkill(target, mob, skill)
-	GetMobByID(17907715):updateEnmity(target);
+	local shield = math.random(1,5)
+	local battletarget = mob:getTarget();
+	local t = battletarget:getPos();
+	local angle = math.random() * math.pi
+	local pos = NearLocation(t, 1.5, angle);
+	t.rot = battletarget:getRotPos();
+	
+    if (shield == 1) then
+		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
+--      mob:resetEnmity(target);
+--		mob:teleport(pos, battletarget);
+--		skill:setMsg(0);
+    elseif (shield == 2) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+--		mob:resetEnmity(target);
+--		mob:teleport(pos, battletarget);
+--		skill:setMsg(0);
+    elseif (shield == 3) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+		mob:delStatusEffect(EFFECT_ARROW_SHIELD);
+        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
+--		mob:resetEnmity(target);
+--		mob:teleport(pos, battletarget);
+--		skill:setMsg(0);
+	elseif (shield == 4) then
+		mob:delStatusEffect(EFFECT_PHYSICAL_SHIELD);
+        mob:addStatusEffect(EFFECT_MAGIC_SHIELD,1,0,duration);
+		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+--		mob:resetEnmity(target);
+--		mob:teleport(pos, battletarget);
+--		skill:setMsg(0);
+	elseif (shield == 5) then
+		mob:delStatusEffect(EFFECT_MAGIC_SHIELD);
+        mob:addStatusEffect(EFFECT_PHYSICAL_SHIELD,1,0,duration);
+		mob:addStatusEffect(EFFECT_ARROW_SHIELD,1,0,duration);
+--		mob:resetEnmity(target);
+--		mob:teleport(pos, battletarget);
+--		skill:setMsg(0);
+	end
 end;
-	
-	
------------------------------------
--- onMobEngaged
------------------------------------
 
-function onMobEngaged(mob,target)
-    mob:setMobMod(MOBMOD_RAGE, 3600); -- 1 hour 3600
-    mob:setMobMod(MOBMOD_ADD_EFFECT,1);
-end;
 
 -----------------------------------
 -- onAdditionalEffect
 -----------------------------------
 
 function onAdditionalEffect(mob,player)
-local chance = 90;
+local chance = 20;
 local effect = math.random(1,5)
 -- apply a random status effect from thf bolts (resets enmity so it can apply it to the next player if the player already has the status effect)
 	if (effect == 1) then
@@ -224,23 +222,8 @@ local effect = math.random(1,5)
 end;
 
 -----------------------------------
--- onMobDisengage
------------------------------------
-
-function onMobDisengage(mob)
-    mob:setUnkillable(true);
-end;
-
------------------------------------
 -- onMobDeath
 -----------------------------------
 
 function onMobDeath(mob, player, isKiller)
-end;
-
------------------------------------
--- onMobDespawn
------------------------------------
-
-function onMobDespawn(mob,target)
 end;
