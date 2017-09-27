@@ -23,26 +23,13 @@ end;
 
 function onMobSpawn(mob)
     mob:setUnkillable(true);
-    SetDropRate(7001,18971,200); --war
-	SetDropRate(7001,18982,200); --sam
-	SetDropRate(7001,18969,200); --dnc
-	SetDropRate(7001,18975,200); --rdm
-	SetDropRate(7001,18973,200); --whm
-	SetDropRate(7001,18970,200); --sch
-	SetDropRate(7001,18979,200); --bst
-	SetDropRate(7001,18976,30); --tfh
-	SetDropRate(7001,18983,30); --nin
-	SetDropRate(7001,18981,30); --rng
-	SetDropRate(7001,18988,30); --pup
-	SetDropRate(7001,18987,30); --cor
-	SetDropRate(7001,18985,30); --smn
-	SetDropRate(7001,18972,30); --mnk
-	SetDropRate(7001,18974,30); --blm
-	SetDropRate(7001,18977,30); --pld
-	SetDropRate(7001,18978,30); --drk
-	SetDropRate(7001,18980,30); --brd
-	SetDropRate(7001,18984,30); --drg
-	SetDropRate(7001,18986,30); --blu
+        SetDropRate(7001,18971,50); --war
+	SetDropRate(7001,18982,50); --sam
+	SetDropRate(7001,18969,50); --dnc
+	SetDropRate(7001,18975,50); --rdm
+	SetDropRate(7001,18973,50); --whm
+	SetDropRate(7001,18970,50); --sch
+	SetDropRate(7001,18979,50); --bst
 end;
 
 -----------------------------------
@@ -74,7 +61,7 @@ function onMobFight(mob,target)
 	    mob:addMod(MOD_SLEEPRES,100);
 		mob:addMod(MOD_LULLABYRES,100);
 		mob:addMod(MOD_TRIPLE_ATTACK,30);
-		mob:addMod(MOD_ACC,50);
+		mob:addMod(MOD_ACC,30);
 		mob:addMod(MOD_MDEF,100);
 		if (mob:hasStatusEffect(EFFECT_BIND) == true) then
 		    mob:delStatusEffect(EFFECT_BIND);
@@ -155,7 +142,7 @@ end;
 -----------------------------------
 
 function onAdditionalEffect(mob,player)
-local chance = 90;
+local chance = 40;
 local effect = math.random(1,5)
 -- apply a random status effect from thf bolts (resets enmity so it can apply it to the next player if the player already has the status effect)
 	if (effect == 1) then
