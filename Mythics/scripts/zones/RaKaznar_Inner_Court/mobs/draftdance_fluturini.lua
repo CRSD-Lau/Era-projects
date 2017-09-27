@@ -71,11 +71,11 @@ function onMobFight(mob,target)
 		mob:setLocalVar("flutterboom", 0);
 	end
 	if (hpp < 50) then
-	    mob:setMod(MOD_SLEEPRES,100);
-		mob:setMod(MOD_LULLABYRES,100);
-		mob:setMod(MOD_TRIPLE_ATTACK,30);
-		mob:setMod(MOD_ACC,50);
-		mob:setMod(MOD_MDEF,100);
+	    mob:addMod(MOD_SLEEPRES,100);
+		mob:addMod(MOD_LULLABYRES,100);
+		mob:addMod(MOD_TRIPLE_ATTACK,30);
+		mob:addMod(MOD_ACC,50);
+		mob:addMod(MOD_MDEF,100);
 		if (mob:hasStatusEffect(EFFECT_BIND) == true) then
 		    mob:delStatusEffect(EFFECT_BIND);
 			mob:resetEnmity(target);
@@ -96,6 +96,7 @@ function onMobFight(mob,target)
 		mob:delStatusEffect(EFFECT_SLEEP_I);
 		mob:delStatusEffect(EFFECT_SLEEP_II);
 		mob:delStatusEffect(EFFECT_LULLABY);
+		GetMobByID(17907715):updateEnmity(target);
        	mob:setLocalVar("flutterboom", 1);
 		mob:teleport(pos, battletarget);
 		useBlowup = true;
@@ -104,17 +105,20 @@ function onMobFight(mob,target)
 		mob:delStatusEffect(EFFECT_SLEEP_I);
 		mob:delStatusEffect(EFFECT_SLEEP_II);
 		mob:delStatusEffect(EFFECT_LULLABY);
+		GetMobByID(17907715):updateEnmity(target);
 		mob:setLocalVar("flutterboom", 2);
 		mob:teleport(pos, battletarget);
 		useBlowup = true;
 	elseif (hpp < 25  and mob:getLocalVar("flutterboom") == 2) then
 	    mob:resetEnmity(target);
+		GetMobByID(17907715):updateEnmity(target);
 		mob:setLocalVar("flutterboom", 3);
 		mob:teleport(pos, battletarget);
 		useBlowup = true;
 	elseif (hpp < 5  and mob:getLocalVar("flutterboom") == 3) then
 	    mob:setLocalVar("flutterboom", 4);
 	    mob:resetEnmity(target);
+		GetMobByID(17907715):updateEnmity(target);
 		mob:teleport(pos, battletarget);
 		useBlowup = true;
 	elseif (hpp == 100) then
@@ -142,6 +146,8 @@ end;
 function onMobEngaged(mob,target)
     mob:setMobMod(MOBMOD_RAGE, 3600); -- 1 hour 3600
     mob:setMobMod(MOBMOD_ADD_EFFECT,1);
+	mob:addMod(MOD_ACC, 50);
+	mob:addMod(MOD_GRAVITYRES, 100);
 end;
 
 -----------------------------------
