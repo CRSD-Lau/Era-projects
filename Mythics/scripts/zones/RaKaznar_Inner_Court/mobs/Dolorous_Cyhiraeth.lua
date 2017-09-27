@@ -123,6 +123,7 @@ function onMobEngaged(mob,target)
 	mob:addMod(MOD_SILENCERES,-100);
 	mob:addMod(MOD_STUNRES,-100);
 	mob:addMod(MOD_LULLABYRES,-100);
+	mob:addMod(MOD_MOD_FASTCAST,50);
 end;
 
 -----------------------------------
