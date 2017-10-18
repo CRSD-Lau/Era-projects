@@ -68,7 +68,7 @@ function onTrade(player,npc,trade)
 	if(trade:getItemCount() == 1) then
         if(trade:hasItemQty(1816,1) or trade:hasItemQty(2154,1) or trade:hasItemQty(2373,1) or trade:hasItemQty(5565,1) or trade:hasItemQty(865,1) or trade:hasItemQty(5564,1)) then   
         player:tradeComplete();
-        player:player:addCurrency("zeni_point", 1000);
+        player:addCurrency("zeni_point", 1000);
         end
 	end
 end;
