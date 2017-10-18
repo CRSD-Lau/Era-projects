@@ -51,7 +51,7 @@ function onMobDeathEx(mob, player, isKiller, isWeaponSkillKill)
 		    player:addCurrency("zeni_point", math.random(9,15));
 		elseif (mob:getMainLvl() >= 76 and mob:getMainLvl() <= 80) then
 		    player:addCurrency("zeni_point", math.random(11,17));
-		elseif (mob:getMainLvl() >= 81 and mob:getMainLvl() <= 85) then
+		elseif (mob:getMainLvl() >= 81 and mob:getMainLvl() >= 85) then
 		    player:addCurrency("zeni_point", math.random(13,19));
 		elseif (mob:getMainLvl() <= 86) then
 		    player:addCurrency("zeni_point", math.random(15,25));
