@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--WS-->
+	<register event=chat_linkshell_*_zstun>; exec stun.txt</register>
+	

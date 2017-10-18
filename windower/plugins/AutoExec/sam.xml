@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--WS-->
+	<register event=chat_linkshell_*_ws>; exec samws.txt</register>
+	<register event=chat_linkshell_*_ws1>; exec sam/samws1.txt</register>
+	<register event=chat_linkshell_*_ws2>; exec sam/samws2.txt</register>
+	<register event=chat_linkshell_*_ws3>; exec sam/samws3.txt</register>
+<!-- This is an autocreated AutoExec file. the next line is commented out and not going to be ran, its to show an example on how to add commands to this file. -->
+<!--register event="login" silent="true" runonce="true">load expwatch</register-->
+	<register event="gainbuff_Blind" silent="false" runonce="false">;input /console send crank /ma "Blindna" Crunk</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">;input /console send crank /ma "Poisona" Crunk</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">;input /console send crank /ma "Paralyzna" Crunk</register>
+
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_*_samheal>; input /heal</register>
+	<register event=chat_linkshell_*_samtrade>; exec trade.txt</register>
+	<register event=invite_*>; input /join</register>
+	<register event=chat_linkshell_*_samleave>; input /pcmd leave</register>
+
+<!--only DD-->
+	<register event=chat_linkshell_Cord_datt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_datt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_datt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_datt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_datt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_datt>; input /assist Nickels; wait 2; input /attack</register>
+<!--only me-->
+	<register event=chat_linkshell_Cord_samatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_samatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_samatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_samatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_samatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_samatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_samh>; input /heal</register>
+<!--buff-->
+<register event=chat_linkshell_*_zsam2>; input /ja Meikyo Shisui</register>
+	<register event=chat_linkshell_*_zhas>; input /ja Hasso</register>
+	<register event=chat_linkshell_*_zseg>; input /ja Seigan</register>
+	<register event=chat_linkshell_*_z3rd>; input /ja Third Eye</register>	
+	<register event=chat_linkshell_*_zmed>; input /ja Meditate</register>
+	<register event=chat_linkshell_*_zhalf>; input /ja Sekkanoki</register>
+	<register event=chat_linkshell_*_zsc>; input /ja Konzen-ittai</register>
+	<register event=chat_linkshell_*_zbb>; input /ja Blade Bash</register>
+	<register event=chat_linkshell_*_nin1>; input /ma "Utsusemi: Ichi"</register>
+	<register event=chat_linkshell_*_nin2>; input /ma "Utsusemi: Ni"</register>
+	<!--register event=chat_linkshell_*_zvoke>; input /ja Provoke</register-->
+<!--Follow-->
+	<register event=chat_linkshell_Cord_samf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_samf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_samf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_samf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_samf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_samf>; input /follow Nickels</register>
+</autoexec>

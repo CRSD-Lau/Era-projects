@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--WS-->
+	<register event=chat_linkshell_*_ws>; input /ws "Slug Shot"</register>
+
+<!--Rolls-->
+	<register event=chat_linkshell_*_eshot>; input /ja "Earth Shot"</register>
+	<register event=chat_linkshell_*_lishot>; input /ja "Lightning Shot"</register>
+	<register event=chat_linkshell_*_wshot>; input /ja "Water Shot"</register>
+	<register event=chat_linkshell_*_fshot>; input /ja "Fire Shot"</register>
+	<register event=chat_linkshell_*_ishot>; input /ja "Ice Shot"</register>
+	<register event=chat_linkshell_*_dshot>; input /ja "Dark Shot"</register>
+	<register event=chat_linkshell_*_lshot>; input /ja "Light Shot"</register>
+	<register event=chat_linkshell_*_fold>; input /ja Fold</register>
+	<register event=chat_linkshell_*_snake>; input /ja "Snake Eye"</register>
+	<register event=chat_linkshell_*_random>; input /ja "Random Deal"</register>
+	<register event=chat_linkshell_*_double>; input /ja Double-Up</register>
+	<register event=chat_linkshell_*_xproll>; input /ja Corsair's Roll</register>
+	<register event=chat_linkshell_*_evaroll>; input /ja Ninja Roll</register>
+	<register event=chat_linkshell_*_accroll>; input /ja Hunter's Roll</register>
+	<register event=chat_linkshell_*_attroll>; input /ja Chaos Roll</register>
+	<register event=chat_linkshell_*_mdefroll>; input /ja Magus's Roll</register>
+	<register event=chat_linkshell_*_cureroll>; input /ja Healer's Roll</register>
+	<register event=chat_linkshell_*_petaccroll>; input /ja Drachen Roll</register>
+	<register event=chat_linkshell_*_spellroll>; input /ja Choral Roll</register>
+	<register event=chat_linkshell_*_blowroll>; input /ja Monk's Roll</register>
+	<register event=chat_linkshell_*_petattroll>; input /ja Beast Roll</register>
+	<register event=chat_linkshell_*_tproll>; input /ja Samurai Roll</register>
+	<register event=chat_linkshell_*_mproll>; input /ja Evoker's Roll</register>
+	<register event=chat_linkshell_*_critroll>; input /ja Rogue's Roll</register>
+	<register event=chat_linkshell_*_doubleroll>; input /ja Fighter's Roll</register>
+	<register event=chat_linkshell_*_regenroll>; input /ja Dancer's Roll</register>
+	<register event=chat_linkshell_*_mattroll>; input /ja Wizard's Roll</register>
+	<register event=chat_linkshell_*_maccroll>; input /ja Warlock's Roll</register>
+	<register event=chat_linkshell_*_pldroll>; input /ja Gallant's Roll</register>
+
+
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_*_corh>; input /heal</register>
+	<register event=chat_linkshell_*_corleave>; input /pcmd leave</register>
+<!--only me-->
+	<register event=chat_linkshell_Cord_corf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_corf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_corf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_corf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_corf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_corf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_coratt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_coratt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_coratt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_coratt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_coratt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_corh>; input /heal</register>
+<!--buff-->
+	<register event=chat_linkshell_*_skin>; input /ma Stoneskin</register>
+	<register event=chat_linkshell_*_blink>; input /ma blink</register>
+	<register event=chat_linkshell_*_nin1>; input /ma "Utsusemi: Ichi"</register>
+	<register event=chat_linkshell_*_nin2>; input /ma "Utsusemi: Ni"</register>
+<!--only DD-->
+	<register event=chat_linkshell_Cord_datt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_datt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_datt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_datt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_datt>; input /assist Crowne; wait 2; input /attack</register>
+
+<!--buff-->
+	<register event=chat_linkshell_*_ara>; input //ara start</register>
+	
+
+
+</autoexec>

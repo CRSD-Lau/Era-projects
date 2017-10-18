@@ -1,0 +1,77 @@
+<autoexec>
+
+<import>default.xml</import>
+<import>mage.xml</import>
+<!--ws-->
+	<register event=chat_linkshell_*_ws>; input /ws "Spirit Taker" &lt;t&gt;</register>
+<!--stop-->
+	<register event=chat_linkshell_*_mstop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>
+	<register event=chat_linkshell_*_sumstop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>	
+<!--Attack, heal, assist-->
+<!--only me-->
+	<register event=chat_linkshell_Cord_smnf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_smnf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_smnf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_smnf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_smnf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_smnf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_smnatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_smnatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_smnatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_smnatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_smnatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_smnatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_smnheal>; input /heal</register>
+	<register event=chat_linkshell_*_smnleave>; input /pcmd leave</register>
+
+<!--cures-->
+	<register event=chat_linkshell_*_s11>; input /ma cure Cord</register>
+	<register event=chat_linkshell_*_s12>; input /ma cure II Cord</register>
+	<register event=chat_linkshell_*_s13>; input /ma cure III Cord</register>
+	<register event=chat_linkshell_*_s21>; input /ma cure Dimes</register>
+	<register event=chat_linkshell_*_s22>; input /ma cure II Dimes</register>
+	<register event=chat_linkshell_*_s23>; input /ma cure III Dimes</register>
+	<register event=chat_linkshell_*_s31>; input /ma cure Crank</register>
+	<register event=chat_linkshell_*_s32>; input /ma cure II Crank</register>
+	<register event=chat_linkshell_*_s33>; input /ma cure III Crank</register>
+	<register event=chat_linkshell_*_s41>; input /ma cure Crunk</register>
+	<register event=chat_linkshell_*_s42>; input /ma cure II Crunk</register>
+	<register event=chat_linkshell_*_s43>; input /ma cure III Crunk</register>
+	<register event=chat_linkshell_*_s51>; input /ma cure Crowne</register>	
+	<register event=chat_linkshell_*_s52>; input /ma cure II Crowne</register>
+	<register event=chat_linkshell_*_s53>; input /ma cure III Crowne</register>
+	<register event=chat_linkshell_*_s61>; input /ma cure Nickels</register>	
+	<register event=chat_linkshell_*_s62>; input /ma cure II Nickels</register>
+	<register event=chat_linkshell_*_s63>; input /ma cure III Nickels</register>
+	<register event=chat_linkshell_*_sa1>; input /ma curaga cord</register>
+	<register event=chat_linkshell_*_sa2>; input /ma curaga II cord</register>	
+<!--Smn-->
+	<register event=chat_linkshell_*_light>; input /ma carbuncle</register>
+	<register event=chat_linkshell_*_ice>; input /ma shiva</register>
+	<register event=chat_linkshell_*_thunder>; input /ma Ramuh</register>
+	<register event=chat_linkshell_*_fire>; input /ma ifrit</register>
+	<register event=chat_linkshell_*_stone>; input /ma Titan</register>
+	<register event=chat_linkshell_*_wind>; input /ma Garuda</register>
+	<register event=chat_linkshell_*_water>; input /ma Leviathan</register>
+	<register event=chat_linkshell_*_dark>; input /ma Diablos</register>
+	<register event=chat_linkshell_*_dark1>; input /ma Fenrir</register>
+	<register event=chat_linkshell_*_spirit>; input /ma Fire Spirit</register>
+
+	
+<!--pet-->
+	<register event=chat_linkshell_*_pett>; input /ja "Assault" &lt;t&gt;</register>
+	<register event=chat_linkshell_*_release>; input /pet release</register>	
+	<register event=chat_linkshell_*_bp1>; exec smn/rage1.txt</register>
+	<register event=chat_linkshell_*_bp70>; exec smn/rage2.txt</register>
+	<register event=chat_linkshell_*_bp75>; exec smn/rage3.txt</register>
+	<register event=chat_linkshell_*_nuke2>; exec smn/nuke2.txt</register>
+	<register event=chat_linkshell_*_nuke4>; exec smn/nuke4.txt</register>
+	<register event=chat_linkshell_*_bpdef>; exec smn/ward1.txt</register>
+	<register event=chat_linkshell_*_bpatt>; exec smn/ward2.txt</register>
+	<register event=chat_linkshell_*_astral>; exec smn/astral.txt</register>
+	<register event=chat_linkshell_*_bpcure>; exec smn/cure.txt</register>
+	<register event=chat_linkshell_*_mpdrain>; input /ja Elemental Siphon</register>
+	<register event=chat_linkshell_*_bp2>; input /ja Apogee</register>
+	<register event=chat_linkshell_*_mp>; exec hpmp.txt</register>
+	<register event=chat_linkshell_*_smnmp>; exec hpmp.txt</register>
+</autoexec>

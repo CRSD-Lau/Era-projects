@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<import>mage.xml</import>
+
+<!--auto-->
+<!--<register event="losebuff_Stoneskin" silent="false" runonce="false">; input /ma "Stoneskin"</register> -->
+	<register event="gainbuff_Silence" silent="false" runonce="false">; input /item "Echo Drop"</register>
+	<register event="gainbuff_Blind" silent="false" runonce="false">; input /ma "Blindna"</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">; input /ma "Poisona"</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">; input /ma "Paralyna"</register>
+	
+<!--buff-->
+	<register event=chat_linkshell_*_seal>; input /ja Elemental Seal</register>
+<!--assist-->
+	<register event=chat_linkshell_*_blmh>; input /heal</register>
+	<register event=chat_linkshell_*_blmleave>; input /pcmd leave</register>
+
+<!--Personal-->
+	<register event=chat_linkshell_Cord_blmf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_blmf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_blmf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_blmf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_blmf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_blmf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_blmatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_blmatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_blmatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_blmatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_blmatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_blmatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_blmsub>; input  /ja Sublimation;</register>
+
+<!--cures-->
+	<register event=chat_linkshell_*_b11>; input /ma cure Cord</register>
+	<register event=chat_linkshell_*_b12>; input /ma cure II Cord</register>
+	<register event=chat_linkshell_*_b13>; input /ma cure III Cord</register>
+	<register event=chat_linkshell_*_b21>; input /ma cure Dimes</register>
+	<register event=chat_linkshell_*_b22>; input /ma cure II Dimes</register>
+	<register event=chat_linkshell_*_b23>; input /ma cure III Dimes</register>
+	<register event=chat_linkshell_*_b31>; input /ma cure Crank</register>
+	<register event=chat_linkshell_*_b32>; input /ma cure II Crank</register>
+	<register event=chat_linkshell_*_b33>; input /ma cure III Crank</register>
+	<register event=chat_linkshell_*_b41>; input /ma cure Crunk</register>
+	<register event=chat_linkshell_*_b42>; input /ma cure II Crunk</register>
+	<register event=chat_linkshell_*_b43>; input /ma cure III Crunk</register>
+	<register event=chat_linkshell_*_b51>; input /ma cure Crowne</register>	
+	<register event=chat_linkshell_*_b52>; input /ma cure II Crowne</register>
+	<register event=chat_linkshell_*_b53>; input /ma cure III Crowne</register>
+	<register event=chat_linkshell_*_b61>; input /ma cure Nickels</register>	
+	<register event=chat_linkshell_*_b62>; input /ma cure II Nickels</register>
+	<register event=chat_linkshell_*_b63>; input /ma cure III Nickels</register>
+	<register event=chat_linkshell_*_ba1>; input /ma curaga cord</register>
+	<register event=chat_linkshell_*_ba2>; input /ma curaga II cord</register>	
+<!--Elemental-->
+	<register event=chat_linkshell_*_s1>; input /ma Stone t</register>
+	<register event=chat_linkshell_*_s2>; input /ma Stone 2 t</register>
+	<register event=chat_linkshell_*_s3>; input /ma Stone 3 t</register>
+	<register event=chat_linkshell_*_s4>; input /ma Stone 4 t</register>
+	<register event=chat_linkshell_*_sa1>; input /ma Stonega t</register>
+	<register event=chat_linkshell_*_sa2>; input /ma Stonega 2 t</register>
+	<register event=chat_linkshell_*_sa3>; input /ma Stonega 3 t</register>
+	<register event=chat_linkshell_*_w1>; input /ma Water t</register>
+	<register event=chat_linkshell_*_w2>; input /ma Water 2 t</register>
+	<register event=chat_linkshell_*_w3>; input /ma Water 3 t</register>
+	<register event=chat_linkshell_*_w4>; input /ma Water 4 t</register>
+	<register event=chat_linkshell_*_wa1>; input /ma Waterga t</register>
+	<register event=chat_linkshell_*_wa2>; input /ma Waterga 2 t</register>
+	<register event=chat_linkshell_*_wa3>; input /ma Waterga 3 t</register>
+	<register event=chat_linkshell_*_a1>; input /ma Aero t</register>
+	<register event=chat_linkshell_*_a2>; input /ma Aero 2 t</register>
+	<register event=chat_linkshell_*_a3>; input /ma Aero 3 t</register>
+	<register event=chat_linkshell_*_a4>; input /ma Aero 4 t</register>
+	<register event=chat_linkshell_*_aa1>; input /ma Aeroga t</register>
+	<register event=chat_linkshell_*_aa2>; input /ma Aeroga 2 t</register>
+	<register event=chat_linkshell_*_aa3>; input /ma Aeroga 3 t</register>
+	<register event=chat_linkshell_*_f1>; input /ma Fire t</register>
+	<register event=chat_linkshell_*_f2>; input /ma Fire 2 t</register>
+	<register event=chat_linkshell_*_f3>; input /ma Fire 3 t</register>
+	<register event=chat_linkshell_*_f4>; input /ma Fire 4 t</register>
+	<register event=chat_linkshell_*_fa1>; input /ma Firega t</register>
+	<register event=chat_linkshell_*_fa2>; input /ma Firega 2 t</register>
+	<register event=chat_linkshell_*_fa3>; input /ma Firega 3 t</register>
+	<register event=chat_linkshell_*_b1>; input /ma Blizzard t</register>
+	<register event=chat_linkshell_*_b2>; input /ma Blizzard 2 t</register>
+	<register event=chat_linkshell_*_b3>; input /ma Blizzard 3 t</register>
+	<register event=chat_linkshell_*_b4>; input /ma Blizzard 4 t</register>
+	<register event=chat_linkshell_*_ba1>; input /ma Blizzaga t</register>
+	<register event=chat_linkshell_*_ba2>; input /ma Blizzaga 2 t</register>
+	<register event=chat_linkshell_*_ba3>; input /ma Blizzaga 3 t</register>
+	<register event=chat_linkshell_*_t1>; input /ma Thunder t</register>
+	<register event=chat_linkshell_*_t2>; input /ma Thunder 2 t</register>
+	<register event=chat_linkshell_*_t3>; input /ma Thunder 3 t</register>
+	<register event=chat_linkshell_*_t4>; input /ma Thunder 4 t</register>
+	<register event=chat_linkshell_*_ta1>; input /ma Thundaga t</register>
+	<register event=chat_linkshell_*_ta2>; input /ma Thundaga 2 t</register>
+	<register event=chat_linkshell_*_ta3>; input /ma Thundaga 3 t</register>
+	<register event=chat_linkshell_*_sleep>; input /ma Sleep t</register>
+	<register event=chat_linkshell_*_sleep2>; input /ma Sleep 2 t</register>
+	<register event=chat_linkshell_*_sleepga>; input /ma Sleepga t</register>
+	<register event=chat_linkshell_*_sleepga2>; input /ma Sleepga 2 t</register>
+
+	
+</autoexec>

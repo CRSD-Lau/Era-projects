@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<autoexec>
+<!--ws-->
+	<register event=chat_linkshell_*_ws>; input /ws Vorpal Blade</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_Cord_zass>; input /assist Cord</register>
+	<register event=chat_linkshell_Dimes_zass>; input /assist Dimes</register>
+	<register event=chat_linkshell_Crank_zass>; input /assist Crank</register>
+	<register event=chat_linkshell_Crunk_zass>; input /assist Crunk</register>
+	<register event=chat_linkshell_Crowne_zass>; input /assist Crowne</register>
+	<register event=chat_linkshell_Cord_zatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_zatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_zatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_zatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_zatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_zheal>; input /heal</register>
+	<register event=chat_linkshell_*_cordheal>; input /heal</register>
+	<register event=invite_*>; input /join</register>
+	<register event=chat_linkshell_*_cordleave>; input /pcmd leave</register>
+	<register event=chat_linkshell_*_cordtrade>; input /trade</register>
+	<register event=chat_party_*_whistle>; exec whistle.txt</register>
+	<register event=chat_party_*_zleave>; exec warp.txt</register>
+	<register event=chat_party_*_dismount>; input /dismount</register>
+<!--Only Cord-->
+	<register event=chat_linkshell_Cord_catt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_catt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_catt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_catt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_catt>; input /assist Crowne; wait 2; input /attack</register>
+<!--Follow-->
+	<register event=chat_linkshell_Cord_zfollow>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_zfollow>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_zfollow>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_zfollow>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_zfollow>; input /follow Crowne</register>
+<!--pet-->
+	<register event=chat_linkshell_*_fight>; input /pet "Fight" t</register>
+	<register event=chat_linkshell_*_heal>; input /pet "Heal"</register>
+	<register event=chat_linkshell_*_stay>; input /pet "Stay"</register>
+	<register event=chat_linkshell_*_leave>; input /pet "Leave"</register>
+	<register event=chat_linkshell_*_sic>; input /pet "Sic"</register>
+	<register event=chat_linkshell_*_call>; exec bst/call.txt</register>
+	<register event=chat_linkshell_*_reward>; exec bst/reward.txt</register>
+	<register event=chat_linkshell_*_charm>; input /ja "Charm" t</register>
+</autoexec>

@@ -1,0 +1,87 @@
+<autoexec>
+	<register event=chat_linkshell_*_skin>; input /ma Stoneskin</register>
+	<register event=chat_linkshell_*_blink>; input /ma Blink</register>
+	<register event=chat_linkshell_*_mh>; input /heal</register>	
+<!--barspells-->
+	<register event=chat_linkshell_*_barfire>; input /ma Barfira</register>
+	<register event=chat_linkshell_*_barbliz>; input /ma Barblizzara</register>
+	<register event=chat_linkshell_*_barwind>; input /ma Bararea</register>
+	<register event=chat_linkshell_*_barstone>; input /ma Barstonra</register>
+	<register event=chat_linkshell_*_barthunder>; input /ma Barthundra</register>
+	<register event=chat_linkshell_*_barwater>; input /ma Barwatera</register>
+<!--Erase-->
+	<register event=chat_linkshell_*_erase1>; input /ma Erase Cord</register>
+	<register event=chat_linkshell_*_erase2>; input /ma Erase Dimes</register>
+	<register event=chat_linkshell_*_erase3>; input /ma Erase Crank</register>
+	<register event=chat_linkshell_*_erase4>; input /ma Erase Crunk</register>
+	<register event=chat_linkshell_*_erase5>; input /ma Erase Crowne</register>
+	<register event=chat_linkshell_*_erase6>; input /ma Erase Nickels</register>
+<!--Silenced-->
+	<register event=chat_linkshell_*_silence1>; input /ma Silena Cord</register>
+	<register event=chat_linkshell_*_silence2>; input /ma Silena Dimes</register>
+	<register event=chat_linkshell_*_silence3>; input /ma Silena Crank</register>
+	<register event=chat_linkshell_*_silence4>; input /ma Silena Crunk</register>
+	<register event=chat_linkshell_*_silence5>; input /ma Silena Crowne</register>
+	<register event=chat_linkshell_*_silence6>; input /ma Silena Nickels</register>
+<!--paralyzed-->
+	<register event=chat_linkshell_*_para1>; input /ma Paralyna Cord</register>
+	<register event=chat_linkshell_*_para2>; input /ma Paralyna Dimes</register>
+	<register event=chat_linkshell_*_para3>; input /ma Paralyna Crank</register>
+	<register event=chat_linkshell_*_para4>; input /ma Paralyna Crunk</register>
+	<register event=chat_linkshell_*_para5>; input /ma Paralyna Crowne</register>
+	<register event=chat_linkshell_*_para6>; input /ma Paralyna Nickels</register>
+<!--Blind-->
+	<register event=chat_linkshell_*_blind1>; input /ma Blindna Cord</register>
+	<register event=chat_linkshell_*_blind2>; input /ma Blindna Dimes</register>
+	<register event=chat_linkshell_*_blind3>; input /ma Blindna Crank</register>
+	<register event=chat_linkshell_*_blind4>; input /ma Blindna Crunk</register>
+	<register event=chat_linkshell_*_blind5>; input /ma Blindna Crowne</register>
+	<register event=chat_linkshell_*_blind6>; input /ma Blindna Nickels</register>
+<!--Poisoned-->
+	<register event=chat_linkshell_*_poison1>; input /ma Paralyna Cord</register>
+	<register event=chat_linkshell_*_poison2>; input /ma Paralyna Dimes</register>
+	<register event=chat_linkshell_*_poison3>; input /ma Paralyna Crank</register>
+	<register event=chat_linkshell_*_poison4>; input /ma Paralyna Crunk</register>
+	<register event=chat_linkshell_*_poison5>; input /ma Paralyna Crowne</register>
+	<register event=chat_linkshell_*_poison6>; input /ma Paralyna Nickels</register>
+<!--cures-->
+	<register event=chat_linkshell_*_m11>; input /ma cure Cord</register>
+	<register event=chat_linkshell_*_m12>; input /ma cure II Cord</register>
+	<register event=chat_linkshell_*_m13>; input /ma cure III Cord</register>
+	<register event=chat_linkshell_*_m14>; input /ma cure IV Cord</register>
+	<register event=chat_linkshell_*_m15>; input /ma cure V Cord</register>
+	<register event=chat_linkshell_*_m21>; input /ma cure Dimes</register>
+	<register event=chat_linkshell_*_m22>; input /ma cure II Dimes</register>
+	<register event=chat_linkshell_*_m23>; input /ma cure III Dimes</register>
+	<register event=chat_linkshell_*_m24>; input /ma cure IV Dimes</register>
+	<register event=chat_linkshell_*_m25>; input /ma cure V Dimes</register>
+	<register event=chat_linkshell_*_m31>; input /ma cure Crank</register>
+	<register event=chat_linkshell_*_m32>; input /ma cure II Crank</register>
+	<register event=chat_linkshell_*_m33>; input /ma cure III Crank</register>
+	<register event=chat_linkshell_*_m34>; input /ma cure IV Crank</register>
+	<register event=chat_linkshell_*_m35>; input /ma cure V Crank</register>
+	<register event=chat_linkshell_*_m41>; input /ma cure Crunk</register>
+	<register event=chat_linkshell_*_m42>; input /ma cure II Crunk</register>
+	<register event=chat_linkshell_*_m43>; input /ma cure III Crunk</register>
+	<register event=chat_linkshell_*_m44>; input /ma cure IV Crunk</register>
+	<register event=chat_linkshell_*_m45>; input /ma cure V Crunk</register>
+	<register event=chat_linkshell_*_m52>; input /ma cure II Crowne</register>
+	<register event=chat_linkshell_*_m53>; input /ma cure III Crowne</register>
+	<register event=chat_linkshell_*_m54>; input /ma cure IV Crowne</register>
+	<register event=chat_linkshell_*_m55>; input /ma cure V Crowne</register>
+	<register event=chat_linkshell_*_m62>; input /ma cure II Nickels</register>
+	<register event=chat_linkshell_*_m63>; input /ma cure III Nickels</register>
+	<register event=chat_linkshell_*_m64>; input /ma cure IV Nickels</register>
+	<register event=chat_linkshell_*_m65>; input /ma cure V Nickels</register>
+	<register event=chat_linkshell_*_ma1>; input /ma curaga cord</register>
+	<register event=chat_linkshell_*_ma2>; input /ma curaga II cord</register>
+	<register event=chat_linkshell_*_ma3>; input /ma curaga III cord</register>
+	<register event=chat_linkshell_*_ma4>; input /ma curaga IV cord</register>
+	<register event=chat_linkshell_*_mr1>; input /ma regen 3 Cord</register>
+	<register event=chat_linkshell_*_mr2>; input /ma regen 3 Dimes</register>
+	<register event=chat_linkshell_*_mr3>; input /ma regen 3 crank</register>
+	<register event=chat_linkshell_*_mr4>; input /ma regen 3 crunk</register>
+	<register event=chat_linkshell_*_mr5>; input /ma regen 3 Crowne</register>
+	<register event=chat_linkshell_*_mr6>; input /ma regen 3 Nickels</register>
+	
+</autoexec>

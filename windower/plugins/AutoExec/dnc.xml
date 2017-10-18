@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--ws-->
+	<register event=chat_linkshell_*_ws1>; exec dancerws.txt</register>
+	<register event=chat_linkshell_*_zsa>; input /ja  Sneak Attack</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_*_dncleave>; input /pcmd leave</register>
+
+<!--only me-->
+	<register event=chat_linkshell_Cord_dncf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_dncf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_dncf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_dncf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_dncf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_dncf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_dncatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_dncatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_dncatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_dncatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_dncatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_dncatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_dnch>; input /heal</register>
+
+<!--linkshell commands-->
+	<register event=chat_linkshell_*_cw11>; input /ja curing Waltz Cord</register>
+	<register event=chat_linkshell_*_cw12>; input /ja curing waltz II Cord</register>
+	<register event=chat_linkshell_*_cw13>; input /ja curing waltz III Cord</register>
+	<register event=chat_linkshell_*_cw14>; input /ja curing waltz IV Cord</register>
+	<register event=chat_linkshell_*_cw15>; input /ja curing waltz V Cord</register>
+	<register event=chat_linkshell_*_cw21>; input /ja curing waltz Dimes</register>
+	<register event=chat_linkshell_*_cw22>; input /ja curing waltz II Dimes</register>
+	<register event=chat_linkshell_*_cw23>; input /ja curing waltz III Dimes</register>
+	<register event=chat_linkshell_*_cw24>; input /ja curing waltz IV Dimes</register>
+	<register event=chat_linkshell_*_cw25>; input /ja curing waltz V Dimes</register>
+	<register event=chat_linkshell_*_cw31>; input /ja curing waltz Crank</register>
+	<register event=chat_linkshell_*_cw32>; input /ja curing waltz II Crank</register>
+	<register event=chat_linkshell_*_cw33>; input /ja curing waltz III Crank</register>
+	<register event=chat_linkshell_*_cw34>; input /ja curing waltz IV Crank</register>
+	<register event=chat_linkshell_*_cw35>; input /ja curing waltz V Crank</register>
+	<register event=chat_linkshell_*_cw41>; input /ja curing waltz Crunk</register>
+	<register event=chat_linkshell_*_cw42>; input /ja curing waltz II Crunk</register>
+	<register event=chat_linkshell_*_cw43>; input /ja curing waltz III Crunk</register>
+	<register event=chat_linkshell_*_cw44>; input /ja curing waltz IV Crunk</register>
+	<register event=chat_linkshell_*_cw45>; input /ja curing waltz V Crunk</register>
+	<register event=chat_linkshell_*_cw51>; input /ja curing waltz Crowne</register>
+	<register event=chat_linkshell_*_cw52>; input /ja curing waltz II Crowne</register>
+	<register event=chat_linkshell_*_cw53>; input /ja curing waltz III Crowne</register>
+	<register event=chat_linkshell_*_cw54>; input /ja curing waltz IV Crowne</register>
+	<register event=chat_linkshell_*_cw55>; input /ja curing waltz V Crowne</register>
+	<register event=chat_linkshell_*_cw61>; input /ja curing waltz Nickels</register>
+	<register event=chat_linkshell_*_cw62>; input /ja curing waltz II Nickels</register>
+	<register event=chat_linkshell_*_cw63>; input /ja curing waltz III Nickels</register>
+	<register event=chat_linkshell_*_cw64>; input /ja curing waltz IV Nickels</register>
+	<register event=chat_linkshell_*_cw65>; input /ja curing waltz V Nickels</register>
+	<register event=chat_linkshell_*_dw>; input /ja divine waltz Cord</register>
+<!--Party healing-->
+	<register event=chat_linkshell_*_pw12>; input /ja curing waltz II p1</register>
+	<register event=chat_linkshell_*_pw13>; input /ja curing waltz III p1</register>
+	<register event=chat_linkshell_*_pw14>; input /ja curing waltz IV p1</register>
+	<register event=chat_linkshell_*_pw22>; input /ja curing waltz II me</register>
+	<register event=chat_linkshell_*_pw23>; input /ja curing waltz III me</register>
+	<register event=chat_linkshell_*_pw24>; input /ja curing waltz IV me</register>
+	<register event=chat_linkshell_*_pw32>; input /ja curing waltz II p2</register>
+	<register event=chat_linkshell_*_pw33>; input /ja curing waltz III p2</register>
+	<register event=chat_linkshell_*_pw34>; input /ja curing waltz IV p2</register>
+	<register event=chat_linkshell_*_pw42>; input /ja curing waltz II p3</register>
+	<register event=chat_linkshell_*_pw43>; input /ja curing waltz III p3</register>
+	<register event=chat_linkshell_*_pw44>; input /ja curing waltz IV p3</register>
+	<register event=chat_linkshell_*_pw52>; input /ja curing waltz II p4</register>
+	<register event=chat_linkshell_*_pw53>; input /ja curing waltz III p4</register>
+	<register event=chat_linkshell_*_pw54>; input /ja curing waltz IV p4</register>
+	<register event=chat_linkshell_*_pw62>; input /ja curing waltz II p5</register>
+	<register event=chat_linkshell_*_pw63>; input /ja curing waltz III p5</register>
+	<register event=chat_linkshell_*_pw64>; input /ja curing waltz IV p5</register>
+<!--abilites-->
+	<register event=chat_linkshell_*_ds1>; input /ja Drain Samba</register>
+	<register event=chat_linkshell_*_ds2>; input /ja Drain Samba II</register>
+	<register event=chat_linkshell_*_hs>; input /ja Haste Samba</register>
+	<register event=chat_linkshell_*_step1>; input /ja Box Step</register>
+	<register event=chat_linkshell_*_step2>; input /ja Quick Step</register>
+	<register event=chat_linkshell_*_df>; input /ja Desperate Flourish</register>
+	<register event=chat_linkshell_*_rf>; input /ja Reverse Flourish</register>
+	<register event=chat_linkshell_*_stun>; input /ja Violent Flourish</register>
+	<register event=chat_linkshell_*_sc>; input /ja Wild Flourish</register>
+</autoexec>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<autoexec>
+<!-- This is an autocreated AutoExec file. the next line is commented out and not going to be ran, its to show an example on how to add commands to this file. -->
+<!--register event="login" silent="true" runonce="true">load expwatch</register-->
+	<register event="login_Cord">ae load pld.xml</register>
+	<register event="login_Dimes">ae load rdm.xml</register>
+	<register event="login_Crank">ae load whm.xml</register>
+	<register event="login_Crunk">ae load sam.xml</register>
+	<register event="login_Crowne">ae load thf.xml</register>
+	<register event="login_Nickels">ae load blm.xml</register>
+	<register event="Login_Knowone">lua load chatporter</register>
+	<register event="Login_Knowone">load chatmon</register>
+</autoexec>

@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<import>mage.xml</import>
+
+<!--stop-->
+	<register event=chat_linkshell_*_mstop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>
+	<register event=chat_linkshell_*_rdmstop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>	
+
+<!--ws-->
+	<register event=chat_linkshell_*_ws>; input /ws Vorpal Blade</register>
+
+<!--register event="login" silent="true" runonce="true">load expwatch</register-->
+    <register event="losebuff_Refresh" silent="false" runonce="false">; input /ma "Refresh" Dimes</register>
+<!--	<register event="losebuff_Stoneskin" silent="false" runonce="false">; input /ma "Stoneskin" Dimes</register> -->
+	<register event="losebuff_Phalanx" silent="false" runonce="false">; input /ma "Phalanx" Dimes</register>
+	<register event="losebuff_Haste" silent="false" runonce="false">; input /ma "Haste" Dimes</register>
+	<register event="gainbuff_Silence" silent="false" runonce="false">; input /item "Echo Drop" Dimes</register>
+	<register event="gainbuff_Blind" silent="false" runonce="false">; input /ma "Blindna" Dimes</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">; input /ma "Poisona" Dimes</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">; input /ma "Paralyzna" Dimes</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_Cord_rdmf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_rdmf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_rdmf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_rdmf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_rdmf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_rdmf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_rdmatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_rdmatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_rdmatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_rdmatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_rdmatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_rdmatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_zvert>; input /ja Convert</register> 
+	<register event=chat_linkshell_*_rdmh>; input /heal</register>
+	<register event=chat_linkshell_*_rdmleave>; input /pcmd leave</register>
+	<register event=chat_linkshell_*_rdmtrade>; input /trade;</register>
+
+<!--Helping-->
+	<register event=chat_linkshell_*_h1>; input /ma Haste Cord</register>
+	<register event=chat_linkshell_*_h2>; input /ma Haste Dimes</register>
+	<register event=chat_linkshell_*_h3>; input /ma Haste Crank</register>
+	<register event=chat_linkshell_*_h4>; input /ma Haste Crunk</register>
+	<register event=chat_linkshell_*_h5>; input /ma Haste Crowne</register>
+	<register event=chat_linkshell_*_h6>; input /ma Haste Nickels</register>
+	<register event=chat_linkshell_*_ph1>; input /ma Phalanx II Cord</register>
+	<register event=chat_linkshell_*_ph2>; input /ma Phalanx II Dimes</register>
+	<register event=chat_linkshell_*_ph3>; input /ma Phalanx II Crank</register>
+	<register event=chat_linkshell_*_ph4>; input /ma Phalanx II Crunk</register>
+	<register event=chat_linkshell_*_ph5>; input /ma Phalanx II Crowne</register>
+	<register event=chat_linkshell_*_ph6>; input /ma Phalanx II Nickels</register>
+	<register event=chat_linkshell_*_r1>; input /ma Refresh Cord</register>
+	<register event=chat_linkshell_*_r2>; input /ma Refresh Dimes</register>
+	<register event=chat_linkshell_*_r3>; input /ma Refresh Crank</register>
+	<register event=chat_linkshell_*_r4>; input /ma Refresh Crunk</register>
+	<register event=chat_linkshell_*_r5>; input /ma Refresh Crowne</register>
+	<register event=chat_linkshell_*_r6>; input /ma Refresh Nickels</register>
+	<register event=chat_linkshell_Cord_protect>; input /ma Protect IV Cord</register>
+	<register event=chat_linkshell_Cord_shell>; input /ma Shell IV Cord</register>
+	<register event=chat_linkshell_*_gravity>; input /ma gravity</register>
+	<register event=chat_linkshell_*_bind>; input /ma Bind</register>
+	<register event=chat_linkshell_*_slow>; input /ma Slow II</register>
+	<register event=chat_linkshell_*_para>; input /ma Paralyze II</register>
+	<register event=chat_linkshell_*_blind>; input /ma Blind II</register>
+	<register event=chat_linkshell_*_silence>; input /ma Silence</register>
+	<register event=chat_linkshell_*_sleep>; input /ma Sleep</register>
+	<register event=chat_linkshell_*_sleep2>; input /ma Sleep 2</register>
+	<register event=chat_linkshell_*_sleepga>; input /ma Sleepga</register>
+	<register event=chat_linkshell_*_sleepga2>; input /ma Sleepga 2</register>
+	<register event=chat_linkshell_*_larts>; input /ja "Light Arts"; wait 1; input /ja Addendum: White; wait 1; input /ja composure</register>
+	<register event=chat_linkshell_*_composure>; input /ja composure</register>
+	<register event=chat_linkshell_*_add light>; input /ja "Addendum: White"</register>
+
+	<!--Say commands-->
+	<register event=chat_linkshell_*_cure>; input /assist cord; wait 1; input /ma cure</register>
+	<register event=chat_linkshell_*_r11>; input /ma cure Cord</register>
+	<register event=chat_linkshell_*_r12>; input /ma cure II Cord</register>
+	<register event=chat_linkshell_*_r13>; input /ma cure III Cord</register>
+	<register event=chat_linkshell_*_r14>; input /ma cure IV Cord</register>
+	<register event=chat_linkshell_*_r21>; input /ma cure Dimes</register>
+	<register event=chat_linkshell_*_r22>; input /ma cure II Dimes</register>
+	<register event=chat_linkshell_*_r23>; input /ma cure III Dimes</register>
+	<register event=chat_linkshell_*_r24>; input /ma cure IV Dimes</register>
+	<register event=chat_linkshell_*_r31>; input /ma cure Crank</register>
+	<register event=chat_linkshell_*_r32>; input /ma cure II Crank</register>
+	<register event=chat_linkshell_*_r33>; input /ma cure III Crank</register>
+	<register event=chat_linkshell_*_r34>; input /ma cure IV Crank</register>
+	<register event=chat_linkshell_*_r41>; input /ma cure Crunk</register>
+	<register event=chat_linkshell_*_r42>; input /ma cure II Crunk</register>
+	<register event=chat_linkshell_*_r43>; input /ma cure III Crunk</register>
+	<register event=chat_linkshell_*_r44>; input /ma cure IV Crunk</register>
+	<register event=chat_linkshell_*_r52>; input /ma cure II Crowne</register>
+	<register event=chat_linkshell_*_r53>; input /ma cure III Crowne</register>
+	<register event=chat_linkshell_*_r54>; input /ma cure IV Crowne</register>
+	<register event=chat_linkshell_*_r62>; input /ma cure II Nickels</register>
+	<register event=chat_linkshell_*_r63>; input /ma cure III Nickels</register>
+	<register event=chat_linkshell_*_r64>; input /ma cure IV Nickels</register>
+	<register event=chat_linkshell_*_ra>; input /ma curaga cord</register>
+	<register event=chat_linkshell_*_ra2>; input /ma curaga II cord</register>
+<!--Party healing-->
+	<register event=chat_linkshell_*_a12>; input /ma cure II p1</register>
+	<register event=chat_linkshell_*_a13>; input /ma cure III p1</register>
+	<register event=chat_linkshell_*_a14>; input /ma cure IV p1</register>
+	<register event=chat_linkshell_*_a22>; input /ma cure II me</register>
+	<register event=chat_linkshell_*_a23>; input /ma cure III me</register>
+	<register event=chat_linkshell_*_a24>; input /ma cure IV me</register>
+	<register event=chat_linkshell_*_a32>; input /ma cure II p2</register>
+	<register event=chat_linkshell_*_a33>; input /ma cure III p2</register>
+	<register event=chat_linkshell_*_a34>; input /ma cure IV p2</register>
+	<register event=chat_linkshell_*_a42>; input /ma cure II p3</register>
+	<register event=chat_linkshell_*_a43>; input /ma cure III p3</register>
+	<register event=chat_linkshell_*_a44>; input /ma cure IV p3</register>
+	<register event=chat_linkshell_*_a52>; input /ma cure II p4</register>
+	<register event=chat_linkshell_*_a53>; input /ma cure III p4</register>
+	<register event=chat_linkshell_*_a54>; input /ma cure IV p4</register>
+	<register event=chat_linkshell_*_a62>; input /ma cure II p5</register>
+	<register event=chat_linkshell_*_a63>; input /ma cure III p5</register>
+	<register event=chat_linkshell_*_a64>; input /ma cure IV p5</register>
+<!--job change-->
+	<register event="jobchange_rdm/*">input /macro book 2; input /macro set 1; input /echo Rdm macros set</register>
+</autoexec>

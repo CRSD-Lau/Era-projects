@@ -1,0 +1,63 @@
+<autoexec>
+
+<import>default.xml</import>
+<import>mage.xml</import>
+<!--ws-->
+	<register event=chat_linkshell_*_ws>; input /ws "Vorpal Blade" &lt;t&gt;</register>
+<!--stop-->
+	<register event=chat_linkshell_*_mstop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>
+	<register event=chat_linkshell_*_blustop>; input /equip main "Misericorde"; wait 1; input /equip main "Chatoyant Staff"; input /equip sub "Bugard Leather Strap";</register>	
+<!--Attack, heal, assist-->
+<!--only me-->
+	<register event=chat_linkshell_Cord_bluf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_bluf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_bluf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_bluf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_bluf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_bluf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_bluatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_bluatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_bluatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_bluatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_bluatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_bluatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_bluh>; input /heal</register>
+	<register event=chat_linkshell_*_bluleave>; input /pcmd leave</register>
+	<register event=chat_linkshell_Cord_datt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_datt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_datt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_datt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_datt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_datt>; input /assist Nickels; wait 2; input /attack</register>
+
+<!--Magic Fruits-->
+	<register event=chat_linkshell_*_fb>; input /ma Frost Breath</register>
+	<register event=chat_linkshell_*_hb>; input /ma Heat Breath</register>
+	<register event=chat_linkshell_*_skin>; input /ma Metallic Body</register>
+	<register event=chat_linkshell_*_def>; input /ma Cocoon</register>
+	<register event=chat_linkshell_*_blink>; input /ma Zephyr Mantle</register>
+	<register event=chat_linkshell_*_saball>; input /ja Sneak Attack; wait 1.5; input /ma Cannonball;</register>
+	<register event=chat_linkshell_*_ball>; input /ma Cannonball</register>
+	<register event=chat_linkshell_*_stun>; input /ma Head Butt</register>
+	<register event=chat_linkshell_*_breeze>; input /ma Healing Breeze</register>
+	<register event=chat_linkshell_*_diss>; input /ma Disseverment</register>
+	<register event=chat_linkshell_*_bomb>; input /ma Self-Destruct</register>
+	<register event=chat_linkshell_*_barr>; input /ma Hysteric Barrage</register>
+	<register event=chat_linkshell_*_blu>; input /ma Bludgeon</register>
+	<register event=chat_linkshell_*_haste>; input /ma Refueling</register>
+	<register event=chat_linkshell_*_cleave>; input /ma Spinal Cleave</register>
+	
+<!--Healing-->
+	<register event=chat_linkshell_*_b11>; input /ma Magic Fruit Cord</register>
+	<register event=chat_linkshell_*_b12>; input /ma Wild Carrot Cord</register>
+	<register event=chat_linkshell_*_b21>; input /ma Magic Fruit Dimes</register>
+	<register event=chat_linkshell_*_b22>; input /ma Wild Carrot Dimes</register>
+	<register event=chat_linkshell_*_b31>; input /ma Magic Fruit Crank</register>
+	<register event=chat_linkshell_*_b32>; input /ma Wild Carrot Crank</register>
+	<register event=chat_linkshell_*_b41>; input /ma Magic Fruit Crunk</register>
+	<register event=chat_linkshell_*_b42>; input /ma Wild Carrot Crunk</register>
+	<register event=chat_linkshell_*_b51>; input /ma Magic Fruit Crowne</register>
+	<register event=chat_linkshell_*_b52>; input /ma Wild Carrot Crowne</register>
+	<register event=chat_linkshell_*_b61>; input /ma Magic Fruit Nickels</register>
+	<register event=chat_linkshell_*_b62>; input /ma Wild Carrot Nickels</register>
+</autoexec>

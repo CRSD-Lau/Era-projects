@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<autoexec>
+<!--ws-->
+	<register event=chat_linkshell_*_zws>; exec cordws.txt</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_Cord_zass>; input /assist Cord</register>
+	<register event=chat_linkshell_Dimes_zass>; input /assist Dimes</register>
+	<register event=chat_linkshell_Crank_zass>; input /assist Crank</register>
+	<register event=chat_linkshell_Crunk_zass>; input /assist Crunk</register>
+	<register event=chat_linkshell_Crowne_zass>; input /assist Crowne</register>
+	<register event=chat_linkshell_Cord_zatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_zatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_zatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_zatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_zatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_zheal>; input /heal</register>
+	<register event=chat_linkshell_*_cordheal>; input /heal</register>
+	<register event=invite_*>; input /join</register>
+	<register event=chat_linkshell_*_cordleave>; input /pcmd leave</register>
+	<register event=chat_linkshell_*_cordtrade>; input /trade</register>
+	<register event=chat_party_*_whistle>; exec whistle.txt</register>
+	<register event=chat_party_*_zleave>; exec warp.txt</register>
+	<register event=chat_party_*_dismount>; input /dismount</register>
+	<register event=chat_*_examines>; input /echo what the fuck you looking at?</register>
+<!--Follow-->
+	<register event=chat_linkshell_Cord_zfollow>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_zfollow>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_zfollow>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_zfollow>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_zfollow>; input /follow Crowne</register>
+
+</autoexec>

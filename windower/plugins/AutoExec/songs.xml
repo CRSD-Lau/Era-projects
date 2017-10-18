@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<autoexec>
+<!--WS-->
+	<register event=chat_linkshell_*_ws>; exec crankws.txt</register>
+
+	<register event="losebuff_Stoneskin" silent="false" runonce="false">;input /ma "Stoneskin" Crank</register>
+	<register event="gainbuff_Silence" silent="false" runonce="false">;input /item "Echo Drop" Crank</register>
+	<register event="gainbuff_Blind" silent="false" runonce="false">;input /ma "Blindna" Crank</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">;input /ma "Poisona" Crank</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">;input /ma "Paralyzna" Crank</register>
+<!--Songs-->
+	<register event=chat_linkshell_*_haste1>; input /ma Advancing March</register>
+	<register event=chat_linkshell_*_haste2>; input /ma Victory March</register>
+	<register event=chat_linkshell_*_run>; input /ma Chocobo Mazurka</register>
+	<register event=chat_linkshell_*_att1>; input /ma Valor Minuet</register>
+	<register event=chat_linkshell_*_att2>; input /ma Valor Minuet II</register>
+	<register event=chat_linkshell_*_att3>; input /ma Valor Minuet III</register>
+	<register event=chat_linkshell_*_att4>; input /ma Valor Minuet IV</register>
+	<register event=chat_linkshell_*_def1>; input /ma Knights Minne</register>
+	<register event=chat_linkshell_*_def2>; input /ma Knights Minne II</register>
+	<register event=chat_linkshell_*_def3>; input /ma Knights Minne III</register>
+	<register event=chat_linkshell_*_def4>; input /ma Knights Minne IV</register>
+	<register event=chat_linkshell_*_mp1>; input /ma Mages Ballad</register>
+	<register event=chat_linkshell_*_mp2>; input /ma Mages Ballad II</register>
+	<register event=chat_linkshell_*_eva1>; input /ma Sheepfoe Mambo</register>
+	<register event=chat_linkshell_*_eva2>; input /ma Dragonfoe Mambo</register>
+	<register event=chat_linkshell_*_regen1>; input /ma Armys Paeon</register>
+	<register event=chat_linkshell_*_regen2>; input /ma Armys Paeon II</register>
+	<register event=chat_linkshell_*_regen3>; input /ma Armys Paeon III</register>
+	<register event=chat_linkshell_*_regen4>; input /ma Armys Paeon IV</register>
+	<register event=chat_linkshell_*_regen5>; input /ma Armys Paeon V</register>
+	<register event=chat_linkshell_*_acc1>; input /ma Sword Madrigal</register>
+	<register event=chat_linkshell_*_acc2>; input /ma Blade Madrigal</register>
+
+	<register event=chat_linkshell_*_slow>; input /ma Battlefield Elegy</register>
+	<register event=chat_linkshell_*_dot>; input /ma Foe Requiem IV</register>
+	<register event=chat_linkshell_*_horde>; input /ma Horde Lullaby</register>
+
+	<register event=invite_*>; input /join</register>
+	<register event=chat_linkshell_*_crankleave>; input /pcmd leave</register>
+	<register event=chat_party_*_whistle>; exec whistle.txt</register>
+	<register event=chat_party_*_zleave>; exec warp.txt</register>
+	<register event=chat_party_*_dismount>; input /dismount</register>
+<!--Follow-->
+	<register event=chat_linkshell_Cord_zfollow>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_zfollow>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_zfollow>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_zfollow>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_zfollow>; input /follow Crowne</register>
+<!--buff-->
+	<register event=chat_linkshell_*_stone>; input /ma Stoneskin</register>
+	
+
+
+</autoexec>

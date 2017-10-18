@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<import>mage.xml</import>
+
+<!--WS-->
+	<register event=chat_linkshell_*_ws>; exec crunkws.txt</register>
+<!-- This is an autocreated AutoExec file. the next line is commented out and not going to be ran, its to show an example on how to add commands to this file. -->
+<!--register event="login" silent="true" runonce="true">load expwatch</register-->
+	<register event="gainbuff_Blind" silent="false" runonce="false">;input /console send crank /ma "Blindna" Crunk</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">;input /console send crank /ma "Poisona" Crunk</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">;input /console send crank /ma "Paralyzna" Crunk</register>
+
+<!--Attack, heal, assist-->
+
+	<register event=chat_linkshell_*_zh>; input /heal</register>
+	<register event=chat_linkshell_*_mnkheal>; input /heal</register>
+	<register event=chat_linkshell_*_mnktrade>; input /trade;</register>
+	<register event=invite_*>; input /join</register>
+	<register event=chat_linkshell_*_mnkleave>; input /pcmd leave</register>
+	<register event=chat_party_*_whistle>; exec whistle.txt</register>
+	<register event=chat_party_*_zleave>; exec warp.txt</register>
+	<register event=chat_party_*_dismount>; input /dismount</register>
+<!--only DD-->
+<!--only me-->
+	<register event=chat_linkshell_Cord_mnkatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_mnkatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_mnkatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_mnkatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_mnkatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_mnkatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_mnkh>; input /heal</register>
+<!--buff-->
+	<register event=chat_linkshell_*_z100fist>; input /ja Hundred Fists</register>
+	<register event=chat_linkshell_*_zfocus>; input /ja Focus</register>
+	<register event=chat_linkshell_*_zchi>; input /ja Chi Blast</register>	
+	<register event=chat_linkshell_*_zber>; input /ja "Berserk"</register>
+	<register event=chat_linkshell_*_zcounter>; input /ja Counterstance</register>
+	<register event=chat_linkshell_*_zformless>; input /ja Formless Strikes</register>
+	<!--register event=chat_linkshell_*_zvoke>; input /ja Provoke</register-->
+<!--Follow-->
+	<register event=chat_linkshell_Cord_zf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_zf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_zf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_zf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_zf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_zf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_mnkf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_mnkf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_mnkf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_mnkf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_mnkf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_mnkf>; input /follow Nickels</register>
+</autoexec>

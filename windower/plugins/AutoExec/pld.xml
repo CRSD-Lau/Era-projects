@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--ws-->
+	<register event=chat_linkshell_*_ws>; input /ws Vorpal Blade</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_*_pldheal>; input /heal</register>
+	<register event=chat_linkshell_*_pldleave>; input /pcmd leave</register>
+	<register event=chat_linkshell_*_pldtrade>; input /trade</register>
+
+<!--Only Cord-->
+	<register event=chat_linkshell_Cord_pldf>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_pldf>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_pldf>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_pldf>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_pldf>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_pldf>; input /follow Nickels</register>
+	<register event=chat_linkshell_Cord_pldatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_pldatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_pldatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_pldatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_pldatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_pldatt>; input /assist Nickels; wait 2; input /attack</register>
+<!--only DD-->
+	<register event=chat_linkshell_Cord_datt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_datt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_datt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_datt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_datt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_datt>; input /assist Nickels; wait 2; input /attack</register>
+<!--Tank-->
+	<register event=chat_linkshell_*_voke>; input /ja Provoke</register>
+	<register event=chat_linkshell_*_def>; input /ja Defender</register>
+	<register event=chat_linkshell_*_bash>; input /ja Shield Bash</register>
+	<register event=chat_linkshell_*_sent>; input /ja Sentinel</register>
+	<register event=chat_linkshell_*_flash>; input /me Flash</register>
+	<register event=chat_linkshell_*_tank1>; input /ma "Utsusemi: Ichi"</register>
+	<register event=chat_linkshell_*_tank2>; input /ma "Utsusemi: Ni"</register>
+	
+<!--cure commands-->
+	<register event=chat_linkshell_*_p11>; input /ma cure Cord</register>
+	<register event=chat_linkshell_*_p12>; input /ma cure II Cord</register>
+	<register event=chat_linkshell_*_p13>; input /ma cure III Cord</register>
+	<register event=chat_linkshell_*_p14>; input /ma cure IV Cord</register>
+	<register event=chat_linkshell_*_p21>; input /ma cure Dimes</register>
+	<register event=chat_linkshell_*_p22>; input /ma cure II Dimes</register>
+	<register event=chat_linkshell_*_p23>; input /ma cure III Dimes</register>
+	<register event=chat_linkshell_*_p24>; input /ma cure IV Dimes</register>
+	<register event=chat_linkshell_*_p31>; input /ma cure Crank</register>
+	<register event=chat_linkshell_*_p32>; input /ma cure II Crank</register>
+	<register event=chat_linkshell_*_p33>; input /ma cure III Crank</register>
+	<register event=chat_linkshell_*_p34>; input /ma cure IV Crank</register>
+	<register event=chat_linkshell_*_p41>; input /ma cure Crunk</register>
+	<register event=chat_linkshell_*_p42>; input /ma cure II Crunk</register>
+	<register event=chat_linkshell_*_p43>; input /ma cure III Crunk</register>
+	<register event=chat_linkshell_*_p44>; input /ma cure IV Crunk</register>
+	<register event=chat_linkshell_*_p52>; input /ma cure II Crowne</register>
+	<register event=chat_linkshell_*_p53>; input /ma cure III Crowne</register>
+	<register event=chat_linkshell_*_p54>; input /ma cure IV Crowne</register>
+	<register event=chat_linkshell_*_p62>; input /ma cure II Nickels</register>
+	<register event=chat_linkshell_*_p63>; input /ma cure III Nickels</register>
+	<register event=chat_linkshell_*_p64>; input /ma cure IV Nickels</register>	
+</autoexec>

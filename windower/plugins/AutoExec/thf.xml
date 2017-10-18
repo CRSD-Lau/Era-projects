@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<autoexec>
+<import>default.xml</import>
+<!--WS-->
+	<register event=chat_linkshell_*_ws>; exec thfws.txt</register>
+	<register event=chat_linkshell_*_saws>; exec thfsaws.txt</register>
+<!--Attack, heal, assist-->
+	<register event=chat_linkshell_*_thfleave>; input /pcmd leave</register>
+
+<!--only DD-->
+	<register event=chat_linkshell_Cord_datt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_datt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_datt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_datt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_datt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_datt>; input /assist Nickels; wait 2; input /attack</register>
+<!--only me-->
+	<register event=chat_linkshell_Cord_thfatt>; input /assist Cord; wait 2; input /attack</register>
+	<register event=chat_linkshell_Dimes_thfatt>; input /assist Dimes; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crank_thfatt>; input /assist Crank; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crunk_thfatt>; input /assist Crunk; wait 2; input /attack</register>
+	<register event=chat_linkshell_Crowne_thfatt>; input /assist Crowne; wait 2; input /attack</register>
+	<register event=chat_linkshell_Nickels_thfatt>; input /assist Nickels; wait 2; input /attack</register>
+	<register event=chat_linkshell_*_thfh>; input /heal</register>
+<!--Follow-->
+	<register event=chat_linkshell_Cord_thff>; input /follow Cord</register>
+	<register event=chat_linkshell_Dimes_thff>; input /follow Dimes</register>
+	<register event=chat_linkshell_Crank_thff>; input /follow Crank</register>
+	<register event=chat_linkshell_Crunk_thff>; input /follow Crunk</register>
+	<register event=chat_linkshell_Crowne_thff>; input /follow Crowne</register>
+	<register event=chat_linkshell_Nickels_thff>; input /follow Nickels</register>
+<!--buff-->
+	<register event=chat_linkshell_*_zPD>; input /ja Perfect Dodge</register>
+	<register event=chat_linkshell_*_zsa>; input /ja Sneak Attack</register>
+	<register event=chat_linkshell_*_zta>; input /ja Trick Attack</register>
+	<register event=chat_linkshell_*_zsahide>; input /ja Sneak Attack; wait 1; input /ja hide</register>
+	<register event=chat_linkshell_*_z3>; input /ja Assassins Charge</register>
+	<register event=chat_linkshell_*_zsteal>; input /ja Steal</register>
+	<register event=chat_linkshell_*_zhide>; input /ja hide</register>
+	<register event=chat_linkshell_*_nin1>; input /ma "Utsusemi: Ichi"</register>
+	<register event=chat_linkshell_*_nin2>; input /ma "Utsusemi: Ni"</register>
+<!--Dnc sub-->
+	<register event=chat_linkshell_*_zdrain>; input /ja Drain Samba 2</register>
+</autoexec>

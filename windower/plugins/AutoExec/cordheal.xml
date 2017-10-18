@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<autoexec>
+<!-- This is an autocreated AutoExec file. the next line is commented out and not going to be ran, its to show an example on how to add commands to this file. -->
+<!--register event="login" silent="true" runonce="true">load expwatch</register-->
+	<register event="hpp_85" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+	<register event="hpp_84" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+    <register event="hpp_83" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+	<register event="hpp_82" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+    <register event="hpp_81" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+    <register event="hpp_80" silent="false" runonce="false">;send Dimes /ma "Cure III" Cord</register>
+	
+	<register event="hpplt76" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_70" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_69" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_68" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_67" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_65" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_64" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_63" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_62" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_61" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_60" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_59" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_58" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_57" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_56" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_55" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_54" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_53" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_52" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_51" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_50" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_49" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_48" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_47" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_46" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_45" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_43" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_42" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_41" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_40" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_39" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_38" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_37" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_36" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_35" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_34" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_33" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_32" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_31" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="hpp_30" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	<register event="lowhp" silent="false" runonce="false">;send Dimes /ma "Cure IV" Cord</register>
+	
+	<register event="gainbuff_Silence" silent="false" runonce="false">;send Dimes /ma "Silena" Cord</register>
+	<register event="gainbuff_Blind" silent="false" runonce="false">;send Dimes /ma "Blindna" Cord</register>
+	<register event="gainbuff_Poison" silent="false" runonce="false">;send Dimes /ma "Poisona" Cord</register>
+	<register event="gainbuff_Paralyze" silent="false" runonce="false">;send Dimes /ma "Paralyzna" Cord</register>
+	<register event="losebuff_Phalanx" silent="false" runonce="false">;send Dimes /ma "Phalanx II" Cord</register>
+	<register event="losebuff_Haste" silent="false" runonce="false">;send Dimes /ma "Haste" Cord</register>
+	<register event="losebuff_Refresh" silent="false" runonce="false">;exec send Dimes /ma "Refresh" Cord</register>
+</autoexec>
