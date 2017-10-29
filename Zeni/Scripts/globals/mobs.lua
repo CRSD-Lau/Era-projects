@@ -41,6 +41,7 @@ function onMobDeathEx(mob, player, isKiller, isWeaponSkillKill)
 	-- Zeni points
 	loc = player:getZoneID();
 	if (loc == 51 or (loc >= 52 and loc <= 56) or (loc >= 61 and loc <= 63) or loc == 65 or loc == 68 or loc == 72 or loc == 79 ) then
+		if (player == nil or player:getHP() == 0) and player:checkDistance(mob) < 100 and partyType < 1 then
 		if (mob:getMainLvl() <= 60) then
 	        player:addCurrency("zeni_point", math.random(3,5));
 		elseif (mob:getMainLvl() >= 61 and mob:getMainLvl() <= 65) then
@@ -53,8 +54,9 @@ function onMobDeathEx(mob, player, isKiller, isWeaponSkillKill)
 		    player:addCurrency("zeni_point", math.random(11,17));
 		elseif (mob:getMainLvl() >= 81 and mob:getMainLvl() >= 85) then
 		    player:addCurrency("zeni_point", math.random(13,19));
-		elseif (mob:getMainLvl() <= 86) then
+		elseif (mob:getMainLvl() >= 86) then
 		    player:addCurrency("zeni_point", math.random(15,25));
 		end
+	end
 	end
 end;
